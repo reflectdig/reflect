@@ -1,16 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import gallery1 from "../assets/images/all-img/about1.png";
-import gallery2 from "../assets/images/all-img/about2.png";
-import gallery3 from "../assets/images/all-img/about3.png";
-import gallery4 from "../assets/images/all-img/about4.png";
 import YoutubePlayer from 'react-youtube-player';
-// import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { IoCloseCircle } from "react-icons/io5";
-import ManOne from "../assets/images/banner/man5.png";
-import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade , } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import BookBtn from "./BookBtn";
 
 
 // Import Swiper styles
@@ -20,39 +11,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import {
-    Button,
-    Dialog,
-    DialogHeader,
-    DialogBody,
-    DialogFooter,
-    Avatar,
-    IconButton,
-    Typography,
     Card,
   } from "@material-tailwind/react";
-  import styled from '@emotion/styled';
+ 
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/Firebase';
 
 
-let gallery = [
-    {
-    src:gallery1,
-    title:"Default Title for Gallery card 1"
-  },
-  {
-    src:gallery2,
-    title:"Default Title for Gallery card 1"
-  },
-  {
-    src:gallery3,
-    title:"Default Title for Gallery card 1"
-  },
-  {
-    src:gallery4,
-    title:"Default Title for Gallery card 1"
-  },
-  ]
+
 
   const overlayStyle = {
     position: 'fixed',
@@ -70,7 +36,6 @@ let gallery = [
 
 const OfferPopup = () => {
     const [isopenModel, setIsOpenModel] = useState(false);
-    const [image, setImage] = useState(null);
     const [offers, setOffers] = useState([]);
 
 
@@ -80,10 +45,10 @@ const OfferPopup = () => {
             const itemsCollection = collection(db, 'Offers');
             const itemsSnapshot = await getDocs(itemsCollection);
             const itemsData = itemsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-             console.log("items data",itemsData);
+            
             setOffers(itemsData);
           } catch (error) {
-            console.error('Error fetching data from Firestore: ', error);
+          
           }
         };
         fetchData();
@@ -96,7 +61,6 @@ const OfferPopup = () => {
 const HandleOpen =()=>{    
     if(offers.length >0){
         offers.map((item,index)=>{
-            console.log("item",item);
     if(item.status  === "OPEN"){
     if (sessionStorage.getItem('offerPopup') == undefined ){
         sessionStorage.setItem('offerPopup', 'true');

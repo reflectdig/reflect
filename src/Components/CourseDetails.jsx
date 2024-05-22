@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { Disclosure, Tab } from "@headlessui/react";
 import React, { Fragment } from "react";
 import {

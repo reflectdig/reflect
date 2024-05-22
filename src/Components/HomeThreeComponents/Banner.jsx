@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import { man4 } from "../../constant/images";
-import "../../assets/css/bannerSlider.css"
 
 
 const Banner = () => {
@@ -20,11 +19,7 @@ const Banner = () => {
           Maintain flawless skin and preserve your youthful appearance.
           Let's get started on achieving beautiful, healthy skin today
           </div>
-          {/* <div className="md:flex  md:space-x-4 space-y-3 md:space-y-0">
-            <a href="#" className="btn btn-primary">
-              Learn From Today
-            </a>
-          </div> */}
+          
         </div>
         <div className="imge-box absolute right-[-60px] top-1/2  -translate-y-1/2 hidden xl:block   ">
           <img src={man4} alt="" />

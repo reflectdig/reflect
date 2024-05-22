@@ -3,10 +3,8 @@ import Footer from "../Footer";
 import Header from "../Header";
 import PageBanner from "../PageBanner";
 import { Container } from "@mui/material";
-// import image from "../../assets/images/banner/centrebanner.png"
-import image from "../../assets/images/banner/aboutbanner.png"
+import image from "../../assets/images/banner/aboutbanner.webp"
 import Topics from "../Topics";
-import Gallery from "../Gallery";
 
 const OurCentre = () => {
   return (
@@ -18,7 +16,6 @@ const OurCentre = () => {
       />
       <Container>
       <Topics />
-      <Gallery/>
       </Container>
       <Footer />
     </>

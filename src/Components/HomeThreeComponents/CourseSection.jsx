@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState } from "react";
 import { courseData } from "../../constant/dummyData";
 import CourseFilter from "./CourseFilter";
@@ -13,7 +13,7 @@ const CourseSection = () => {
       <div className="container">
         <div className="serv-tabs">
           <div className="serv-tone">
-            <div className="mini-title">Treatments</div>
+            <h1 className="mini-title">Treatments</h1>
             <div className="column-title ">
             Comprehensive <span className="text-secondary">Dermatology</span> Solutions
             </div>

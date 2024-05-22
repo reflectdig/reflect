@@ -1,21 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { Fragment } from "react";
 import { topicsData } from "../constant/dummyData";
-import { Dialog, DialogBody, DialogFooter } from "@material-tailwind/react";
-import { MdOutlineClose } from "react-icons/md";
-import ex from "../assets/images/logo/ex.png";
-
-
-
 
 const Topics = () => {
-  const [open, setOpen] = React.useState(false);
-  const [openImage, setOpenImage] = React.useState(false);
-  const [image, setImage] = React.useState(null);
- 
+  const [open, setOpen] = React.useState(false); 
   const handleOpen = () => setOpen(!open);
-  const handleOpenImage = () =>setOpenImage(true);
-  const handleCloseImage = () =>setOpenImage(false);
 
   return (
     <Fragment>
@@ -40,6 +29,7 @@ const Topics = () => {
                 <img
                   src={item.logo}
                   alt=""
+                  loading="lazy"
                   className="rounded-full object-cover"
                   style={{width: "100px",height:'100px'}}
                 />

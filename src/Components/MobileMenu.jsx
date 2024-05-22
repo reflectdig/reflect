@@ -1,14 +1,11 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/images/logo/ref.png";
+import logo from "../assets/images/logo/ref.webp";
 import { fbIcon, twIcon, pnIcon, insIcon } from "../constant/images";
 
 const MobileMenu = ({ activeMenu, setActiveMenu }) => {
   const [showHomeMenu, setShowHomeMenu] = useState(false);
   const [showPageMenu, setShowPageMenu] = useState(false);
-  const [showBlogMenu, setShowBlogMenu] = useState(false);
   const [showCourseMenu, setShowCourseMenu] = useState(false);
   const [showCourseProducerMenu, setShowCourseProducerMenu] = useState(false);
   const handleShowHomeMenu = () => {
@@ -20,9 +17,7 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
   const handleShowPageMenu = () => {
     setShowPageMenu(!showPageMenu);
   };
-  const handleShowBlogMenu = () => {
-    setShowBlogMenu(!showBlogMenu);
-  };
+ 
   const handleShowCourseMenu = () => {
     setShowCourseMenu(!showCourseMenu);
   };
@@ -30,12 +25,13 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
     <>
       <div className="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col z-[999] active-mobile-menu">
         <div className="flex justify-between px-6 flex-none">
-          <Link
-            to={"/"}
+          <a 
+            aria-label="go to home"
+            href={"/"}
             className="brand-logo flex-none mr-10 "
           >
             <img src={logo} alt="logo" style={{width: "150px"}}/>
-          </Link>
+          </a>
           <span
             className=" text-3xl text-black cursor-pointer rt-mobile-menu-close"
             onClick={() => {
@@ -51,21 +47,21 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
               className={`menu-item ${showHomeMenu ? "open" : ""}`}
               onClick={handleShowHomeMenu}
             >
-              <a href="/">Home</a>
+              <a aria-label="Go to Home" href="/">Home</a>
               
             </li>
             <li
               className={`menu-item ${showPageMenu ? "open" : ""}`}
               onClick={handleShowPageMenu}
             >
-              <a href="/about">Our Doctor</a>
+              <a aria-label="Go to Our Doctor" href="/about">Our Doctor</a>
               
             </li>
             <li
               className={`menu-item ${showPageMenu ? "open" : ""}`}
               onClick={handleShowPageMenu}
             >
-              <a href="/ourcentre">About</a>
+              <a aria-label="Go to About" href="/ourcentre">About</a>
               
             </li>
             <li
@@ -74,7 +70,7 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
               }`}
               onClick={handleShowCourseMenu}
             >
-              <a href="#">Treatments</a>
+              <a aria-label="Go to Treatments" href="#">Treatments</a>
               <ul
                 className="sub-menu"
                 style={
@@ -82,22 +78,22 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
                 }
               >
                 <li>
-                  <Link to={"/skin"}>Skin</Link>
+                  <a aria-label="Go to Skin" href={"/skin"}>Skin</a>
                 </li>
                 <li>
-                  <Link to={"/hair"}>
+                  <a aria-label="Go to Hair" href={"/hair"}>
                     Hair
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={"/nail"}>
+                  <a aria-label="Go to Nail" href={"/nail"}>
                     Nail
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={"/body"}>
+                  <a aria-label="Go to Body" href={"/body"}>
                     Body
-                  </Link>
+                  </a>
                 </li>
                 
               </ul>
@@ -109,7 +105,7 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
               }`}
               onClick={handleShowProducerMenu}
             >
-              <a href="#">Procedure</a>
+              <a aria-label="Go to Procedure" href="#">Procedure</a>
               <ul
                 className="sub-menu"
                 style={
@@ -121,27 +117,21 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
                 
                 
                 <li>
-                  <Link to={"/aestheticprocedure"}>
+                  <a aria-label="Go to Aesthetic Procedure" href={"/aestheticprocedure"}>
                   Aesthetic Procedure
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={"/medicalprocedure"}>
+                  <a aria-label="Go to Medical Procedure" href={"/medicalprocedure"}>
                   Medical Procedure
-                  </Link>
+                  </a>
                 </li>
                 
               </ul>
             </li>
-            <li
-              className={`menu-item ${showBlogMenu ? "open" : ""}`}
-              onClick={handleShowBlogMenu}
-            >
-              <a href="/blog">Blog</a>
-             
-            </li>
+            
             <li>
-              <Link to={"/contact"}>Contacts</Link>
+              <a aria-label="Go to Contacts" href={"/contact"}>Contacts</a>
             </li>
           </ul>
         </div>
@@ -151,22 +141,22 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
           </div>
           <ul className="flex space-x-4 justify-center ">
             <li>
-              <a href="#" className="flex h-10 w-10">
+              <a aria-label="facebook icon" href="#" className="flex h-10 w-10">
                 <img src={fbIcon} alt="fbIcon" />
               </a>
             </li>
             <li>
-              <a href="#" className="flex h-10 w-10">
+              <a aria-label="twitter icon" href="#" className="flex h-10 w-10">
                 <img src={twIcon} alt="twiter" />
               </a>
             </li>
             <li>
-              <a href="#" className="flex h-10 w-10">
+              <a aria-label="printrest icon" href="#" className="flex h-10 w-10">
                 <img src={pnIcon} alt="pnIcon" />
               </a>
             </li>
             <li>
-              <a href="#" className="flex h-10 w-10">
+              <a aria-label="instagram icon" href="#" className="flex h-10 w-10">
                 <img src={insIcon} alt="insIcon" />
               </a>
             </li>

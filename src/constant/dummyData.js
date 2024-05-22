@@ -1,33 +1,8 @@
-import {
-  blog1,
-  blog2,
-  blog3,
-  c1,
-  c2,
-  c3,
-  c4,
-  c5,
-  c6,
-  counter1,
-  counter2,
-  counter3,
-  counter4,
-  t1,
-  t2,
-  t3,
-  t4,
-  t5,
-  t6,
-  t7,
-  t8,
+import { 
   team1,
   team2,
   team3,
-  team4,
-  team5,
-  team6,
-  team7,
-  team8,
+  team4,  
   acne,
   acne1,
   chroniclegulcers,
@@ -90,8 +65,6 @@ import {
   Acnescarandporetreatments1,
   Tattooremoval,
   Tattooremoval1,
-  Laserfacialandbodyhairremoval,
-  Laserfacialandbodyhairremoval1,
   Miliaandskintagremoval,
   Miliaandskintagremoval1,
   Molesandfreckles,
@@ -114,13 +87,11 @@ import {
   Vitiligosurgeries1,
   Earloberepair,
   Earloberepair1,
-  Removekeloidsandscars,
-  Removekeloidsandscars1
 } from "./images";
 
 import bbanc from "../assets/images/banner/blogin.png";
-import div from "../assets/images/team/div.png"
-import mer from "../assets/images/team/mer.png";
+import div from "../assets/images/team/div.webp"
+import mer from "../assets/images/team/mer.webp";
 import pe from "../assets/images/banner/pe.png"
 import pl from "../assets/images/banner/pl.png"
 import mf from "../assets/images/banner/mf.png"
@@ -132,63 +103,6 @@ import botox from "../assets/images/banner/botox.png"
 import co2 from "../assets/images/banner/co2.png"
 import fbp from "../assets/images/banner/fbp.webp";
 import peel from "../assets/images/banner/peel.webp";
-
-
-
-
-export const achivementCounter = [
-  {
-    icon: counter1,
-    num: 82 + "k",
-    sector: "Enrolled Students",
-  },
-  {
-    icon: counter2,
-    num: 460,
-    sector: "Academic Programs",
-  },
-  {
-    icon: counter3,
-    num: 20,
-    sector: "Certified Studens",
-  },
-  {
-    icon: counter4,
-    num: 200,
-    sector: "Award Winnig",
-  },
-];
-
-export const blogArticleData = [
-  {
-    title: "Fashion and Luxury Fashion in a Changing",
-    img: c1,
-  },
-  {
-    title: "Creative Writing Through Storytelling",
-    img: c2,
-  },
-  {
-    title: "Product Manager Learn The Skills & Job",
-    img: c3,
-  },
-  {
-    title: "The Power of Podcast for Storytelling",
-    img: c4,
-  },
-];
-
-
-export const data = {
-  acne: "Content for category 1",
-  skin: "Content for category 2",
-  // Add more categories and their content as needed
-};
-
-
-
-
-
 
 
 export const topicsData = [
@@ -312,13 +226,6 @@ export const courseData = [
     title: "Skin Tags",
     img: skintag1,
   },
-  // {
-  //   id: [0, "skin"],
-  //   link: '/vaginaldischarge',
-  //   post: "Vaginal discharge",
-  //   title: "Vaginal discharge is one of the common reasons for gynecological consultation. Not all women",
-  //   img: c1,
-  // },
   {
     id: [0, "hair"],
     link: '/dandruff',
@@ -1236,9 +1143,6 @@ export const categoryDataNail = {
   }
 }
 
-
-
-
 export const categoryDataMedi = {
   comedoneextraction: {
     thumb: comedoneExtraction1,
@@ -1424,50 +1328,6 @@ export const categoryDataMedi = {
       }
     ]
   },
-  // removekeloidsandscars : {
-  //   thumb: Removekeloidsandscars1,
-  //   image: Removekeloidsandscars,
-  //   title: "Remove - Keloids & Scars",
-  //   desPreview: "Remove -keloids & scars ",
-  //   qanda: [
-  //     {
-  //       quest: "Remove -keloids & scars",
-  //       ans: "Scars and keloids can often serve as unwelcome reminders of past injuries or surgeries, impacting one's self-esteem and confidence. Fortunately, advancements in dermatology offer various methods for removing keloids and minimizing the appearance of scars. Let's explore the journey to achieving scar-free skin."
-  //     },
-  //     {
-  //       quest:"Understanding Keloids and Scars:",
-  //       ans:"Keloids, raised overgrowths of scar tissue, can extend beyond the original wound site and become larger than the initial injury. Scars, on the other hand, result from the natural healing process and can vary in appearance, from flat and pale to raised and dark."
-  //     },
-  //     {
-  //       quest:"The Importance of Removal:",
-  //       ans:"Keloids and scars may cause physical discomfort, itching, and emotional distress, prompting individuals to seek removal options. Removing these skin imperfections not only restores aesthetics but can also alleviate any associated symptoms."
-  //     },
-  //     {
-  //       quest:"Non-Invasive Treatments:",
-  //       ans:"For less severe cases, non-invasive treatments such as silicone gel sheets, pressure dressings, and corticosteroid injections may be effective. These methods work to flatten and lighten the appearance of scars and keloids, promoting a smoother skin texture."
-  //     },
-  //     {
-  //       quest:"Surgical Options:",
-  //       ans:"Surgical interventions, including excision and laser therapy, offer more direct approaches to keloid and scar removal. Excision involves cutting out the scar tissue, while laser therapy targets discoloration and promotes collagen production, resulting in a more even skin tone."
-  //     },
-  //     {
-  //       quest:"Cryotherapy and Radiation:",
-  //       ans:"Cryotherapy, using extreme cold to freeze and remove keloids, is another option. Radiation therapy may also be recommended post-surgery to prevent keloid recurrence. These methods require careful consideration and consultation with a healthcare professional."
-  //     },
-  //     {
-  //       quest:"The Role of Professional Guidance:",
-  //       ans:"Seeking guidance from a dermatologist or plastic surgeon is essential for determining the most suitable removal method based on the type, size, and location of the scar or keloid. Professional advice ensures a tailored approach for optimal results."
-  //     },
-  //     {
-  //       quest:"Embracing Scar-Free Skin:",
-  //       ans:"Whether you're dealing with scars from surgery or keloids from previous injuries, there are diverse options available to achieve smoother, scar-free skin. Understanding the range of treatments and consulting with a healthcare professional will empower you to make informed decisions on the path to skin rejuvenation."
-  //     },
-  //     {
-  //       quest:"Conclusion:",
-  //       ans:"The journey to removing keloids and scars is a personal one, and with advancements in medical science, individuals can now choose from a variety of effective treatments. Embrace the possibilities of scar-free skin and regain the confidence to put your best face forward"
-  //     },
-  //   ]
-  // },
   
 
 }

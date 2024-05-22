@@ -3,18 +3,8 @@ import gallery1 from "../assets/images/all-img/about1.png";
 import gallery2 from "../assets/images/all-img/about2.png";
 import gallery3 from "../assets/images/all-img/about3.png";
 import gallery4 from "../assets/images/all-img/about4.png";
-import {
-    Button,
-    Dialog,
-    DialogHeader,
-    DialogBody,
-    DialogFooter,
-    Avatar,
-    IconButton,
-    Typography,
-    Card,
-  } from "@material-tailwind/react";
-  import styled from '@emotion/styled';
+
+
 
 
 let gallery = [
@@ -57,11 +47,8 @@ let gallery = [
 
 const Gallery = () => {
   const [openImage, setOpenImage] = React.useState(false);
-  const [image, setImage] = React.useState(null);
+  const [image, setImage] = React.useState(null); 
 
-  
- 
-//   const handleOpen = () => setOpen(!open);
   const handleOpenImage = () =>setOpenImage(true);
   const handleCloseImage = () =>setOpenImage(false);
   return (
@@ -69,10 +56,10 @@ const Gallery = () => {
 
          <div className="container" style={{marginTop:"20px"}}>
         <div className="text-center">
-          {/* <div className="mini-title">Discover Our Advanced Tools and Techniques</div> */}
+        
           <div className="column-title ">
             Gallery 
-           {/* <span className="text-secondary">Technologies</span>  */}
+       
           </div>
         </div>
           
@@ -93,7 +80,7 @@ const Gallery = () => {
               </div>
               <div className="course-content">
                 <h6 className=" text-xl mb-2 font-bold " style={{paddingBottom:"20px"}}>{item.title}</h6>
-                {/* <p className="tech-text">{item.quantity}</p> */}
+         
               </div>
             </a>
           ))}

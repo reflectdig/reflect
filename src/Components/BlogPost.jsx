@@ -1,32 +1,15 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import {
-  bs1,
-  bs2,
-  bs3,
+  
   user3,
-  comment,
-  q,
+  
   calender,
   clockIcon,
-  fbIcon,
-  pnIcon,
-  twIcon,
-  insIcon,
-  rc3,
-  rc1,
-  insIcon1,
-  insIcon3,
-  insIcon2,
-  search,
-  rc2,
-  insIcon4,
-  insIcon5,
-  insIcon6,
+  
 } from "../constant/images";
 import bban from "../assets/images/banner/blog.png"
 import bbanc from "../assets/images/banner/blogin.png"
-import ContactForm from "./ContactForm";
 import { AiFillClockCircle } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
 import { HiMail } from "react-icons/hi";

@@ -1,33 +1,12 @@
 import React, { useEffect  } from "react";
-import EventDetails from "../EventDetails";
 import Footer from "../Footer";
 import Header from "../Header";
-import PageBanner from "../PageBanner";
 import { categoryData, categoryDataAest, categoryDataBody, categoryDataHair, categoryDataMedi, categoryDataNail } from "../../constant/dummyData";
-
-import {
-  fbIcon,
-  pnIcon,
-  twIcon,
-  insIcon,
-  mainEvent,
-  circleClock,
-  rc1,
-  rc2,
-  target,
-  call,
-  clock
-} from "../../constant/images";
-import { Link, useParams } from "react-router-dom";
-
-import {IoIosCall} from "react-icons/io"
-import {HiMail} from "react-icons/hi"
-import {MdLocationPin} from "react-icons/md";
-import {AiFillClockCircle} from "react-icons/ai"
-import BookBtn from "../BookBtn";
+import {  useParams } from "react-router-dom";
+import ErrorPage from "./404Page";
 
 
-const EventSingle = ({category}) => {
+const EventSingle = () => {
   let treatment = "";
 
   useEffect(() => {
@@ -100,15 +79,17 @@ const EventSingle = ({category}) => {
   return (
     <>
     <Header />
+    {
+      card ?
     <div className="nav-tab-wrapper tabs  section-padding">
       <div className="container">
-        <img src={card.image} alt="" className=" lg:mb-10 mb-6 block w-full" />
+        <img src={card?.image} loading={'eager'} alt="" className=" lg:mb-10 mb-6 block w-full" />
         <div className="grid grid-cols-12 gap-[30px]">
           <div className="lg:col-span-8 col-span-12">
             <h3>{card.title}</h3>
             {card.qanda.map((item, index) => (
               <div className="lg:my-6 my-4" key={index}>
-              <h5 className="font-bold" style={{fontSize: "1.3em", marginBottom: "10px"}}>{item.quest}</h5>
+              <h4 className="font-bold" style={{fontSize: "1.3em", marginBottom: "10px"}}>{item.quest}</h4>
                {Array.isArray(item.ans) ? 
                <ul type="1">
                  {
@@ -122,488 +103,381 @@ const EventSingle = ({category}) => {
                 }
             </div>
             ))}
-            {/* <div className="bg-secondary text-white p-10 rounded-md">
-              <div
-                id="timer"
-                className="md:flex space-y-4 md:space-y-0 justify-between text-center "
-              > */}
-                {/* <div className="text-[44px] font-bold">
-                  {days}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    days
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {hours}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    hours
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {minutes}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    minutes
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {seconds}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    seconds
-                  </div>
-                </div> */}
-              {/* </div>
-            </div> */}
-            {/* <div className=" py-6">
-              Among the major reasons why Python is “slow”, it really boils down
-              to 2 — Python is interpreted as opposed to compiled, ultimately
-              leading to slower execution times; and the fact that it is
-              dynamically typed. Take, for example, TensorFlow, a Machine
-              Learning library available in Python. These libraries were
-              actually written in C++ and made available in Python, sort of
-              forming a Python implementation. The same goes for Numpy and, to
-              an extent, even Caer.
-            </div> */}
-            {/* <div className="flex justify-between border-y border-[#ECECEC] py-4 md:mt-12 mt-10">
-              <div className=" text-black font-semibold">Previous</div>
-              <ul className="flex space-x-3 lg:justify-end items-center  ">
-                {[fbIcon, pnIcon, twIcon, insIcon].map((item, indx) => (
-                  <li key={indx}>
-                    <a href="#" className="flex h-8 w-8">
-                      <img src={item} alt="" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
+            
           </div>
           <div className="lg:col-span-4 col-span-12 relative lg:-mt-20">
             <div className="sidebarWrapper max-w-[90%] mx-auto space-y-[30px]">
-              {/* <div className="wdiget custom-text space-y-5 ">
-                <h4 className=" widget-title">Contact Details</h4>
-                <ul className="list space-y-6  ">
-                  <li className=" flex space-x-3 ">
-                    <div className="flex-1 space-x-3 flex">
-                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <AiFillClockCircle size="20px" />
-                      </div>
-                      <div>10:00 am - 8:00 pm</div>
-                    </div>
-                  </li>
-                  <li className=" flex space-x-3 ">
-                    <div className="flex-1 space-x-3 flex">
-                    <div style={{display: "flex", justifyContent: "center", alignItems: "start", marginTop: "3px"}}>
-                      <MdLocationPin size="20px" />
-                      </div>
-                      <div>Ekaparnika Towers, First Floor, Ram Lakshman Nagar, GV Residency Link Road Near National Model School, Sowripalayam, Post, Coimbatore, Tamil Nadu 641028</div>
-                    </div>
-                  </li>
-
-                  <li className=" flex space-x-3 ">
-                    <div className="flex-1 space-x-3 flex">
-                      <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <HiMail size="20px" />
-                      </div>
-                      <div>skinreflect@gmail.com</div>
-                    </div>
-                  </li>
-
-                  <li className=" flex space-x-3 ">
-                    <div className="flex-1 space-x-3 flex">
-                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                      <IoIosCall size="20px" />
-                      </div>
-                      <div>063801 36936</div>
-                    </div>
-                  </li>
-                </ul>
-                <BookBtn />
-              </div> */}
-
+         
               <div className="wdiget">
                 <h4 className=" widget-title">Other treatments</h4>
                 {
                    treatment === "Skin" || treatment === "Hair" || treatment === "Body" || treatment === "Nail"      ?
                 
-                <ul className="list space-y-2">
+                <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Skin Treatments</h5>
                   <div>
-                 <Link to="/acne">
+                 <a href="/acne">
                   <span className=" text-primary font-semibold">
                    Acne
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                 <Link to="/skininfection">
+                 <a href="/skininfection">
                   <span className=" text-primary font-semibold">
                    Skin Infection
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  <div>
-                  <Link to='/skinallergiesandurticaria'>
+                  <a href='/skinallergiesandurticaria'>
                   <span className=" text-primary font-semibold">
                    Skin Allergies and Urticaria
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  <div>
-                  <Link to="/skingrowths">
+                  <a href="/skingrowths">
                   <span className=" text-primary font-semibold">
                   Skin Growths
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  <div>
                   <span className=" text-primary font-semibold">
-                    <Link to="/pigmentation">
+                    <a href="/pigmentation">
                       Pigmentation
-                    </Link>
+                    </a>
                   </span>
                   </div>
                  <div>
-                  <Link to="/vitiligo">
+                  <a href="/vitiligo">
                   <span className=" text-primary font-semibold">
                   Vitiligo
                   </span>
-                  </Link>
+                  </a>
                 </div>
                 <div>
-                  <Link to="/psoriasis">
+                  <a href="/psoriasis">
                   <span className=" text-primary font-semibold">
                   Psoriasis
                   </span>
-                  </Link>
+                  </a>
                 </div>
                 <div>
-                  <Link to="/chroniculcers">
+                  <a href="/chroniculcers">
                   <span className=" text-primary font-semibold">
                   Chronic Ulcers
                   </span>
-                  </Link>
+                  </a>
                 </div>
                 <div>
-                  <Link to="/pcosandskin">
+                  <a href="/pcosandskin">
                   <span className=" text-primary font-semibold">
                   PCOS and Skin
                   </span>
-                  </Link>
+                  </a>
                 </div>
                 <div >
-                <Link to={"/unevenskintone"}>
+                <a href={"/unevenskintone"}>
                 <span className=" text-primary font-semibold">
                   Uneven Skin Tone
                 </span>
-                </Link>
+                </a>
                 </div>
                 <div >
-                <Link to={"/openpores"}>
+                <a href={"/openpores"}>
                 <span className=" text-primary font-semibold">
                   Open Pores
                   </span>
-                </Link>
+                </a>
                 </div>
                 <div >
-                <Link to={"/skintags"}>
+                <a href={"/skintags"}>
                 <span className=" text-primary font-semibold">
                   Skintags
                 </span>
-                  </Link>
+                  </a>
                 </div>
                 <div>
-                  <Link to="/vaginaldischarge">
+                  <a href="/vaginaldischarge">
                   <span className=" text-primary font-semibold">
                   Vaginal Discharge
                   </span>
-                  </Link>
+                  </a>
                 </div>
                
 
                   <hr />
-                </ul>
+                </div>
                 :
                 null
                  }
 
                 {
                  treatment === "Skin" || treatment === "Hair" || treatment === "Body" || treatment === "Nail" ?
-                <ul className="list space-y-2">
+                <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Hair</h5>
                  <div>
-                  <Link to="/dandruff">
+                  <a href="/dandruff">
                   <span className=" text-primary font-semibold">
                         Dandruff
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  <div>
-                  <Link to="/hairloss" >
+                  <a href="/hairloss" >
                   <span className=" text-primary font-semibold">
                     Hair Loss
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  <div>
-                  <Link to='/damagedhair'>
+                  <a href='/damagedhair'>
                   <span className=" text-primary font-semibold">
                         Damaged Hair
                   </span>
-                  </Link>
+                  </a>
                   
                   </div>
                  <div>
-                  <Link to="/prematuregreyingofhair">
+                  <a href="/prematuregreyingofhair">
                   <span className=" text-primary font-semibold">
                      Premature Greying of Hair
                   </span>
-                  </Link>
+                  </a>
                   </div>
                  
                   <hr />
 
-                </ul>
+                </div>
                 :
                 null
                 }
 
                {
                  treatment === "Skin" || treatment === "Hair" || treatment === "Body" || treatment === "Nail" ?
-                <ul className="list space-y-2">
+                <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Body</h5>
                   <div>
-                  <Link to="/excessivesweating">
+                  <a href="/excessivesweating">
                   <span className=" text-primary font-semibold">
                     Excessive Sweating
                   </span>
-                  </Link>
+                  </a>
                   </div><div>
-                  <Link to="/excessivebodyhair">
+                  <a href="/excessivebodyhair">
                   <span className=" text-primary font-semibold">
                    Excessive Body Hair
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <hr/>
-                  </ul>
+                  </div>
                   :
                   null
                   }
                   {
                     treatment === "Skin" || treatment === "Hair" || treatment === "Body" || treatment === "Nail" ?
-                  <ul className="list space-y-2">
+                  <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Nail</h5>
                   <div>
-                  <Link to="/nailinfection">
+                  <a href="/nailinfection">
                   <span className=" text-primary font-semibold">
                    Nail Infection
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/dystrophy">
+                  <a href="/dystrophy">
                   <span className=" text-primary font-semibold">
                   Dystrophy
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/ingrowingtoenail">
+                  <a href="/ingrowingtoenail">
                   <span className=" text-primary font-semibold">
                    Ingrown Toe Nail
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <hr/>
-                  </ul>
+                  </div>
                   :
                   null
                   }
                    {
                    treatment === "AProducer" || treatment === "MProducer" ?
-                  <ul className="list space-y-2">
+                  <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Aesthetic Procedure</h5>
                   <div>
-                  <Link to="/chemicalpeeling">
+                  <a href="/chemicalpeeling">
                   <span className=" text-primary font-semibold">
                   Chemical Peeling
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/laserskintoningandrejuvenation">
+                  <a href="/laserskintoningandrejuvenation">
                   <span className=" text-primary font-semibold">
                   Laser Skin Toning and Rejuvenation
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/microneedling">
+                  <a href="/microneedling">
                   <span className=" text-primary font-semibold">
                    Microneedling
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/prp">
+                  <a href="/prp">
                   <span className=" text-primary font-semibold">
                    PRP
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/excessivebodyhairremovalwithlaser">
+                  <a href="/excessivebodyhairremovalwithlaser">
                   <span className=" text-primary font-semibold">
                   Excessive Body Hair - Removal With Laser
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/skintagmolewarttreatment">
+                  <a href="/skintagmolewarttreatment" aria-label=" Skin Tag, Mole, Wart Treatment">
                   <span className=" text-primary font-semibold">
                   Skin Tag, Mole, Wart Treatment
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/microdermabrasion">
+                  <a href="/microdermabrasion" aria-label="Microdermabrasion">
                   <span className=" text-primary font-semibold">
                    Microdermabrasion
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div > 
-                   <Link to={"/hydrafacial"}>
+                   <a href={"/hydrafacial"} aria-label="Hydrafacial">
                   <span className=" text-primary font-semibold">
                       Hydrafacial
                       </span>
-                   </Link>
+                   </a>
                   </div>
                   <div > 
-                  <Link to={"/medifacials"}>
+                  <a href={"/medifacials"}>
                   <span className=" text-primary font-semibold">
                         Medi Facials
                   </span>
-                  </Link>
+                  </a>
                   </div>
                    <div > 
-                   <Link to={"/acnescarandporetreatments"}>
+                   <a href={"/acnescarandporetreatments"}>
                   <span className=" text-primary font-semibold">
                     Acne Scar and Pore Treatments
                   </span>
-                   </Link>
+                   </a>
                    </div>
-                   <li > 
-                    <Link to={"/tattooremoval"}>
+                   <div > 
+                    <a href={"/tattooremoval"}>
                      <span className=" text-primary font-semibold">
                       Tattoo Removal
                       </span>
-                    </Link>
-                   </li>
+                    </a>
+                   </div>
                   
-                   {/* <li > 
-                    <Link to={"/miliaandskintagremoval"}>
-                  <span className=" text-primary font-semibold">
-                      Milia and Skin Tag Removal
-                  </span>
-                     </Link>
-                    </li> */}
-                    <li > 
-                      <Link to={"/molesandfreckles"}>
+                  
+                    <div > 
+                      <a href={"/molesandfreckles"}>
                        <span className=" text-primary font-semibold">
                         Moles and Freckles
                         </span>
-                      </Link>
-                    </li>
+                      </a>
+                    </div>
                   <hr/>
-                  </ul>
+                  </div>
                   :
                   null
                   }
                   {
                     treatment === "MProducer" || treatment === "AProducer"  ?
-                  <ul className="list space-y-2">
+                  <div className="list space-y-2">
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Medical Procedure</h5>
                   <div>
-                  <Link to="/comedoneextraction">
+                  <a href="/comedoneextraction">
                   <span className=" text-primary font-semibold">
                   Comedone Extraction
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/biopsies">
+                  <a href="/biopsies">
                   <span className=" text-primary font-semibold">
                   Biopsies
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/procedureforingrowntoenails">
+                  <a href="/procedureforingrowntoenails">
                   <span className=" text-primary font-semibold">
                    Procedure for Ingrown Toe Nails
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/keloids">
+                  <a href="/keloids">
                   <span className=" text-primary font-semibold">
                    Keloids
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div>
-                  <Link to="/scartreatment">
+                  <a href="/scartreatment">
                   <span className=" text-primary font-semibold">
                    Scar Treatment
                   </span>
-                  </Link>
+                  </a>
                   </div>
                   <div > 
-                    <Link to={"/cornwarttreatment"}>
+                    <a href={"/cornwarttreatment"}>
                      <span className=" text-primary font-semibold">
                           Corn Wart Treatment
                       </span>
-                    </Link>
+                    </a>
                   </div>
                   <div > 
-                     <Link to={"/lipomaremoval"}>
+                     <a href={"/lipomaremoval"}>
                         <span className=" text-primary font-semibold">
                         Lipoma Removal
                         </span>
-                     </Link>
+                     </a>
                   </div>
                   <div > 
-                    <Link to={"/vitiligosurgeries"}>
+                    <a href={"/vitiligosurgeries"}>
                     <span className=" text-primary font-semibold">
                           Vitiligo Surgeries
                     </span>
-                    </Link>
+                    </a>
                   </div>
                   <div > 
-                    <Link to={"/earloberepair"}>
+                    <a href={"/earloberepair"}>
                     <span className=" text-primary font-semibold">
                           Ear Lobe Repair
                     </span>
-                    </Link>
+                    </a>
                   </div>
-                  {/* <div > 
-                    <Link to={"/removekeloidsandscars"}>
-                    <span className=" text-primary font-semibold">
-                          Remove Keloids and Scars
-                    </span>
-                    </Link>
-                  </div> */}
+                  
                   <hr/>
-                  </ul>
+                  </div>
                   :
                   null
                   }
@@ -614,6 +488,9 @@ const EventSingle = ({category}) => {
         </div>
       </div>
     </div>
+    :
+    <ErrorPage/>
+    }
 
 
       <Footer />

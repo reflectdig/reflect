@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { teamData } from "../constant/dummyData";
-import { team1 } from "../constant/images";
 import div from "../assets/images/team/divya.webp";
 import mer from "../assets/images/team/meera.webp";
 
@@ -24,6 +21,7 @@ const Team = () => {
               <div className="cons-img rounded-full  relative mx-auto mb-8">
                 <img
                   src={mer}
+                  loading="lazy"
                   alt=""
                   className=" w-full h-full object-cover rounded-full"
                 />
@@ -95,6 +93,7 @@ const Team = () => {
                 <img
                   src={div}
                   alt=""
+                  loading="lazy"
                   className=" w-full h-full object-cover rounded-full"
                 />
               </div>

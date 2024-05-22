@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react";
 import {
   fbIcon,
@@ -15,13 +13,12 @@ import {
 const EventDetails = ({category}) => {
   useEffect(() => {
     if (document.getElementById("timer")) {
-      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime(); // Update the count down every 1 second
+      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
       var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime(); // Find the distance between now and the count down date
+        var now = new Date().getTime(); 
 
-        var distance = countDownDate - now; // Time calculations for days, hours, minutes and seconds
+        var distance = countDownDate - now; 
 
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor(
@@ -78,33 +75,7 @@ const EventDetails = ({category}) => {
                 id="timer"
                 className="md:flex space-y-4 md:space-y-0 justify-between text-center "
               >
-                {/* <div className="text-[44px] font-bold">
-                  {days}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    days
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {hours}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    hours
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {minutes}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    minutes
-                  </div>
-                </div>
-
-                <div className="text-[44px] font-bold">
-                  {seconds}
-                  <div className="text-lg font-medium mt-2 capitalize">
-                    seconds
-                  </div>
-                </div> */}
+                
               </div>
             </div>
             <div className=" py-6">

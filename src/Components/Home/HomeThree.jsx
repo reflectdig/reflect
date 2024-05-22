@@ -3,7 +3,6 @@ import Header from "../Header";
 import About from "../HomeThreeComponents/About";
 import Accordion from "../HomeThreeComponents/Accordion";
 import Banner from "../HomeThreeComponents/Banner";
-import Brands from "../HomeThreeComponents/Brands";
 import CourseBlock from "../HomeThreeComponents/CourseBlock";
 import Event from "../HomeThreeComponents/Event";
 import Team from "../HomeThreeComponents/Team";
@@ -19,7 +18,6 @@ function HomeThree() {
     <>
       <Header />
       <Banner />
-      {/* <Brands /> */}
       <About />
       <CourseSection />
       <Team />

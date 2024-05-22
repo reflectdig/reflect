@@ -1,9 +1,8 @@
 import React from "react";
-import CoralinaCloud from "../CoralinaCloud";
 import Footer from "../Footer";
 import Header from "../Header";
 import PageBanner from "../PageBanner";
-import image from "../../assets/images/banner/aboutbanner.png"
+import image from "../../assets/images/banner/aboutbanner.webp"
 import DivComp from "../DivComp";
 
 const Div = () => {

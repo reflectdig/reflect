@@ -5,7 +5,7 @@ import Header from "../Header";
 import PageBanner from "../PageBanner";
 
 const Courses = ({image, categoryData}) => {
-  console.log("CategoryData",categoryData);
+  
   return (
     <>
       <Header />

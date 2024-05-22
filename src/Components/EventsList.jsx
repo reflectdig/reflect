@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { e1, e2, e3, e4, e5, e6, e7, e8, e9 } from "../constant/images";

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import ok from "../assets/images/svg/ok.svg";
 import aboutTwo from "../assets/images/all-img/about2.png";

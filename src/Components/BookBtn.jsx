@@ -6,10 +6,8 @@ import {
     DialogHeader,
     DialogBody,
     DialogFooter,
-    Input,
-    Typography
+    Input
   } from "@material-tailwind/react";
-import logo from "../assets/images/logo/introbg.png"
 import { FormControlLabel, FormLabel, Radio, RadioGroup } from '@mui/material';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../config/Firebase';
@@ -17,13 +15,12 @@ import { db } from '../config/Firebase';
 
 export default function BookBtn(props) {
 
-  //bookings
+
 
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [timeSlot, setTimeSlot] = useState('morning');
-  const [submitted, setSubmitted] = useState(false);
-
+ 
 
   const { open, dispatch } = useGlobalState();
 
@@ -37,13 +34,13 @@ export default function BookBtn(props) {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+ 
     try {
-      // Add the document to Firestore
+     
       await addDataToFirestore();
-      setSubmitted(true);
+     
     } catch (error) {
-      console.error('Error adding data to Firestore: ', error);
+     
     }
 
     setName('');
@@ -70,34 +67,31 @@ export default function BookBtn(props) {
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(formData)
     }
-    // Send Emails
-    fetch('https://emailservice-gl9m.onrender.com/reflect/sendemail',opitons)
+  
+    fetch('https://serveremail-1.onrender.com/reflect/sendemail',opitons)
+    
     .then((res)=>res.json())
     .then(response=>{
-      //  console.log("response",response);
+     
     })
-
     
   };
-    // bookings
+
 
     return (
     
         <>
             <div className={`${props.btnclass} lg:block`} onClick={handleOpen} >
-                <a className="btn btn-primary py-[15px] px-8 lg:w-auto">
+                <a aria-label='Open Book Appointment Model' href='#' className="btn btn-primary font-bold py-[15px] px-8 lg:w-auto">
                   Book Appointment
                 </a>
             </div>
             <div >
               <Dialog open={open}  style={{margin: "auto auto", border: " 4px solid #b89148", width: "350px", height: "480px", marginTop: "10%", borderRadius: "30px"}}  size='xxl' >
               <DialogHeader style={{textAlign: "center"}}>Book your appointment now!</DialogHeader>
-              <DialogBody>
-               
-              <form className="mt-2 mb-2 w-80 max-w-screen-lg sm:w-96">
-                
-                <div className="mb-1 flex flex-col gap-6">
-                  
+              <DialogBody>               
+              <form className="mt-2 mb-2 w-80 max-w-screen-lg sm:w-96">                
+                <div className="mb-1 flex flex-col gap-6">                  
                   <Input
                     size="lg"
                     placeholder="name"
@@ -143,10 +137,11 @@ export default function BookBtn(props) {
                   color="red"
                   onClick={handleOpen}
                   className="mr-1"
+                  aria-label='Cancel Contact Form'
                 >
                   <span>Cancel</span>
                 </Button>
-                <Button variant="gradient" color="amber" onClick={handleSubmit}>
+                <Button aria-label='Confirm Contact Form' variant="gradient" color="amber" onClick={handleSubmit}>
                   <span>Confirm</span>
                 </Button>
               </DialogFooter>

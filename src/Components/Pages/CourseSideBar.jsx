@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState } from "react";
 import {
   rating1,
@@ -65,7 +65,6 @@ const SideBar = () => {
       </div>
       <div className="wdiget widget_catagory">
         <h4 className="widget-title">Price Filter</h4>
-        {/* <div className="slider-range"></div> */}
     
         <input type="range" max={10000} min={1500} className="slider-range" onChange={(e) => setPriceVal(e.target.value)} />
         <div className="price_slider_amount">
