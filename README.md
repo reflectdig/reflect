@@ -69,3 +69,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # reflect
+
+
+ <Route
+            path="/react-templates/edumim/home-two"
+            element={<HomeTwo />}
+          />
+          <Route
+            path="/react-templates/edumim/home-three"
+            element={<HomeThree />}
+          />
+          <Route path="/react-templates/edumim/about" element={<AboutOne />} />
+          <Route
+            path="/about"
+            element={<AboutTwo />}
+          />
+          <Route
+            path="/react-templates/edumim/instructor"
+            element={<InstructorOne />}
+          />
+          <Route
+            path="/react-templates/edumim/instructor-two"
+            element={<InstructorTwo />}
+          />
+          <Route
+            path="/react-templates/edumim/instructor-details"
+            element={<InstructorDetails />}
+          />
+          <Route path="/react-templates/edumim/event" element={<Event />} />
+          <Route
+            path="/react-templates/edumim/event-single"
+            element={<EventSingle />}
+          />
+          <Route path="/react-templates/edumim/error" element={<ErrorPage />} />
+          <Route path="/react-templates/edumim/courses" element={<Courses />} />
+          <Route
+            path="/react-templates/edumim/courses-sidebar"
+            element={<CourseSideBar />}
+          />
+          <Route
+            path="/react-templates/edumim/single-course"
+            element={<SingleCourse />}
+          />
+         
+          <Route
+            path="/single-blog"
+            element={<SingleBlog />}
+          />
+          <Route path="/react-templates/edumim/thanks" element={<Thanks />} />
