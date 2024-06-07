@@ -40,13 +40,10 @@ const Header = () => {
                         
                     </li>
                     <li className={`menu-item`}>
-                      <a aria-label='go to our doctor' href="/about">Our&nbsp;Doctors</a>
+                      <a aria-label='go to about us ' href="/about">About</a>
                         
                     </li>
-                    <li className="menu-item">
-                      <a aria-label='go to about' href="/ourcentre">About</a>
-                      
-                    </li>
+                    
                     <li className="menu-item-has-children">
                       <a aria-label='Trements Menu' href="#" style={{marginRight:"7px"}}>Treatments</a>
                       <ul className="sub-menu">

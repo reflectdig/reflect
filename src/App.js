@@ -40,9 +40,9 @@ const [isloggedon,setIsloggedon] = useState(storedToken || false)
         <Routes>
           <Route
             path="/"
-            element={<Navigate to={"/reflect"} />}
+            element={<Navigate to={"/home"} />}
           />
-          <Route path="/reflect" element={<HomeOne />} />
+          <Route path="/home" element={<HomeOne />} />
           <Route path="/skin" element={<Skin />} />
           <Route path="/hair" element={<Hair />} />
           <Route path="/body" element={<Body />} />
@@ -52,7 +52,7 @@ const [isloggedon,setIsloggedon] = useState(storedToken || false)
           <Route path="/:cardId" element={<EventSingle />} />
           <Route path="/krishnameera" element={<Mer />} />
           <Route path="/divya" element={<Div />} />
-          <Route path="/ourcentre" element={<OurCentre />} />
+          <Route path="/about" element={<OurCentre />} />
           <Route path="*" element={<ErrorPage />} />
 
           
@@ -61,10 +61,10 @@ const [isloggedon,setIsloggedon] = useState(storedToken || false)
           {isloggedon.Login ? <Route path="/login" element={<Navigate to="/admin"/>} /> : <Route path="/admin" element={<Navigate to="/login"/>} /> }
            
          
-          <Route
+          {/* <Route
             path="/about"
             element={<AboutTwo />}
-          />
+          /> */}
           <Route
             path="/contact"
             element={<ContactUs />}

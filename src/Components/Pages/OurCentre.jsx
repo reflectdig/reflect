@@ -5,6 +5,8 @@ import PageBanner from "../PageBanner";
 import { Container } from "@mui/material";
 import image from "../../assets/images/banner/aboutbanner.webp"
 import Topics from "../Topics";
+import Team from "../HomeThreeComponents/Team";
+
 
 const OurCentre = () => {
   return (
@@ -15,6 +17,7 @@ const OurCentre = () => {
         num={1}
       />
       <Container>
+      <Team />
       <Topics />
       </Container>
       <Footer />
