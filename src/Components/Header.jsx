@@ -39,14 +39,14 @@ const Header = () => {
                       <a aria-label='Go to Home...' href="/">Home</a>
                         
                     </li>
-                    <li className={`menu-item`}>
-                      <a aria-label='go to our doctor' href="/about">Our&nbsp;Doctors</a>
-                        
-                    </li>
                     <li className="menu-item">
-                      <a aria-label='go to about' href="/ourcentre">About</a>
-                      
+                      <a aria-label='go to about' href="/about">About</a>
                     </li>
+
+                    <li className={`menu-item`}>
+                      <a aria-label='go to our blogs' href="/blogs">Blogs</a>
+                    </li>
+
                     <li className="menu-item-has-children">
                       <a aria-label='Trements Menu' href="#" style={{marginRight:"7px"}}>Treatments</a>
                       <ul className="sub-menu">

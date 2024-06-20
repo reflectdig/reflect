@@ -21,9 +21,9 @@ const ContactUs = () => {
               We're Just a <span className="text-secondary">Click</span> Away. 
               </h2>
               
-              <div className="mt-10">
+              {/* <div className="mt-10">
               <BookBtn btnclass={"hidden"} /> 
-              </div>
+              </div> */}
               <ul className=" list-item space-y-6 pt-8">
                 <li className="flex">
                   <div className="flex-none mr-6">

@@ -1,5 +1,4 @@
 import React from "react";
-import BlogPost from "../BlogPost";
 import Footer from "../Footer";
 import Header from "../Header";
 import PageBanner from "../PageBanner";
@@ -9,8 +8,8 @@ const SingleBlog = () => {
   return (
     <>
       <Header />
-      {/* <PageBanner image={image} /> */}
-      <BlogPost />
+      <PageBanner image={image} />
+      
       <Footer />
     </>
   );

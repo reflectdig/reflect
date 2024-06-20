@@ -8,6 +8,8 @@ const AboutTwo = lazy(() => import("./Components/Pages/AboutTwo"));
 const ContactUs = lazy(() => import("./Components/Pages/ContactUs"));
 const EventSingle = lazy(() => import("./Components/Pages/EventSingle"));
 const { data } = lazy(() => import("./constant/dummyData"));
+const Blogs = lazy(() => import("./Components/Pages/SingleBlog"));
+const BlogsList = lazy(() => import("./Components/Pages/BlogList"));
 const Skin = lazy(() => import("./Components/Pages/Skin"));
 const Hair = lazy(() => import("./Components/Pages/Hair"));
 const Body = lazy(() => import("./Components/Pages/Body"));
@@ -16,7 +18,7 @@ const Aest = lazy(() => import("./Components/Pages/Aest"));
 const Medi = lazy(() => import("./Components/Pages/Medi"));
 const Mer = lazy(() => import("./Components/Pages/Mer"));
 const Div = lazy(() => import("./Components/Pages/Div"));
-const OurCentre = lazy(() => import("./Components/Pages/OurCentre"));
+// const OurCentre = lazy(() => import("./Components/Pages/OurCentre"));
 const Admin = lazy(() => import("./Admin/Admin"));
 const AdminLogin = lazy(() => import("./Admin/Login"));
 
@@ -40,19 +42,20 @@ const [isloggedon,setIsloggedon] = useState(storedToken || false)
         <Routes>
           <Route
             path="/"
-            element={<Navigate to={"/reflect"} />}
+            element={<Navigate to={"/home"} />}
           />
-          <Route path="/reflect" element={<HomeOne />} />
+          <Route path="/home" element={<HomeOne />} />
           <Route path="/skin" element={<Skin />} />
           <Route path="/hair" element={<Hair />} />
           <Route path="/body" element={<Body />} />
           <Route path="/nail" element={<Nail />} />
+          <Route path="/blogs" element={<BlogsList />} />
+          <Route path="/blogs/:blogsId" element={<Blogs />} />
           <Route path="/medicalprocedure" element={<Medi />} />
           <Route path="/aestheticprocedure" element={<Aest />} />
           <Route path="/:cardId" element={<EventSingle />} />
           <Route path="/krishnameera" element={<Mer />} />
           <Route path="/divya" element={<Div />} />
-          <Route path="/ourcentre" element={<OurCentre />} />
           <Route path="*" element={<ErrorPage />} />
 
           

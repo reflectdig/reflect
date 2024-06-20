@@ -103,7 +103,9 @@ const EventSingle = () => {
                 }
             </div>
             ))}
-            
+            <a href="/contact" className="btn font-bold btn-primary py-3 px-8 lg:px-10 lg:text-lg lg:py-4">
+              Book Appointment
+            </a>
           </div>
           <div className="lg:col-span-4 col-span-12 relative lg:-mt-20">
             <div className="sidebarWrapper max-w-[90%] mx-auto space-y-[30px]">

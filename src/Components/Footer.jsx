@@ -63,7 +63,10 @@ const Footer = () => {
          
           <div className="single-footer">
             <h3 className="mb-8 text-2xl font-bold text-white">Consult now!</h3>           
-            <BookBtn />
+            {/* <BookBtn /> */}
+            <a href="/contact" className="btn font-bold btn-primary py-3 px-8 lg:px-10 lg:text-lg lg:py-4">
+              Book Appointment
+            </a>
           </div>
           <div>
           <ul className=" list-item space-y-6 pt-8">

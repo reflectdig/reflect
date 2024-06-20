@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ManOne from "../assets/images/banner/man6.webp";
 import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade, } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import BookBtn from "./BookBtn";
-
+import bannerimg from '../assets/images/landing.webp';
+import bannerimg1 from '../assets/images/tab-landing.webp';
+import bannerimg2 from '../assets/images/mobile-landing.webp';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -13,10 +15,82 @@ import 'swiper/css/pagination';
 SwiperCore.use([Navigation, Pagination, Autoplay,EffectFade]);
 
 const Banner = () => {
-  const navigationPrevRef = React.useRef(null)
-  const navigationNextRef = React.useRef(null)
+  const [imageSrc, setImageSrc] = useState(() => {
+    if (window.innerWidth <= 430) {
+      return bannerimg2;
+    } else if (window.innerWidth <= 750) {
+      return bannerimg1;
+    } else {
+      return bannerimg1;
+    }
+  });
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 430);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 430) {
+        setImageSrc(bannerimg2);
+        setIsMobile(true);
+      } else if (window.innerWidth <= 750) {
+        setImageSrc(bannerimg1);
+        setIsMobile(false);
+      } else {
+        setImageSrc(bannerimg1);
+        setIsMobile(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const mobileStyles = isMobile
+    ? {
+        position: 'absolute',
+        top: '10%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: '1.2rem'
+      }
+    : {};
+
+  const tabletStyles = {
+    '@media (max-width: 768px)': {
+      '.text-4xl': {
+        fontSize: '3rem', 
+      },
+      '.text-6xl': {
+        fontSize: '4rem', 
+      },
+      '.lg\\:text-lg': {
+        fontSize: '1.25rem', 
+      },
+    },
+  };
+  // const navigationPrevRef = React.useRef(null)
+  // const navigationNextRef = React.useRef(null)
   return (
-    <Swiper
+    <>
+      <div className="relative h-screen w-full bg-cover bg-center flex items-center">
+        <img src={imageSrc} alt="bannerimg" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-start px-8 lg:px-16">
+          <div className="text-left text-white px-2" style={{ ...tabletStyles, ...mobileStyles }}>
+            <h1 className="ban-contone-heading-v pb-6" style={{ lineHeight: '1' }}>
+              Your Skin <br />Deserves the Best
+            </h1>
+            <a href="/contact" className="btn font-bold btn-primary py-3 px-8 lg:px-10 lg:text-lg lg:py-4">
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+
+    {/* <Swiper
       spaceBetween={30}
       effect={'fade'}
       autoplay={{ delay: 3000 }}
@@ -110,7 +184,8 @@ const Banner = () => {
           </div>
         </div>
       </SwiperSlide>
-    </Swiper>
+    </Swiper> */}
+    </>
   );
 };
 
