@@ -1,36 +1,57 @@
-
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import bban from "../assets/images/banner/blog.png"
 import { AiFillClockCircle } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
 import { HiMail } from "react-icons/hi";
 import { IoIosCall } from "react-icons/io";
+import { useParams } from 'react-router-dom';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../config/Firebase';
 
 const BlogPost = () => {
+  const { id } = useParams();
+  const [blogPost, setBlogPost] = useState(null);
+
+  useEffect(() => {
+    const fetchBlogPost = async () => {
+      const blogDoc = doc(db, "blogs", id);
+      const blogData = await getDoc(blogDoc);
+      if (blogData.exists()) {
+        setBlogPost(blogData.data());
+      } else {
+        console.error("No such blog post!");
+      }
+    };
+
+    fetchBlogPost();
+  }, [id]);
+
+  if (!blogPost) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="nav-tab-wrapper tabs  section-padding">
       <div className="container">
         <div className="grid grid-cols-12 gap-[30px]">
           <div className="lg:col-span-8 col-span-12 pt-10">
             <div className="bg-[#F8F8F8] rounded-md">
-              <img src={bban} alt="" className=" rounded-t-md mb-10" />
+              <img src={blogPost.imageURL} alt={blogPost.title}style={{ width: '100%', height: 'auto', borderRadius: '8px', marginBottom: '16px' }} />
               <div className="px-10 pb-10">
                 <h3>
-                Revitalize Your Skin: Dermatology-Based Solutions for a Radiant Complexion
+                {blogPost.title}
                 </h3>
                 <p className="mt-6 blog-content">
-                Glowing, healthy skin isn't just a trend; it's a reflection of your well-being. Dermatology, the field of medicine focused on skin health, offers an array of solutions to help you achieve and maintain a radiant complexion. In this blog, we'll explore the world of dermatology-based solutions and how they can transform your skin.
+                {blogPost.description}
                 </p>
-               
-                <p className="mt-6 blog-content">
-                The desire for youthful, flawless skin has led to a surge in cosmetic dermatology. These professionals offer an array of treatments such as Botox, dermal fillers, chemical peels, and laser therapy to address concerns like fine lines, wrinkles, uneven skin tone, and more. These procedures can rejuvenate your skin and boost your confidence.
-                </p>
-                <p className="blog-content">
-                Early detection of skin cancer is pivotal for successful treatment. Dermatologists can perform regular skin checks, identifying suspicious moles and lesions. In cases of skin cancer, they guide patients through treatment options, ensuring the best possible outcomes.
-                </p>
+                {blogPost.subtitles.map((subtitle, index) => (
+                  <div key={index}>
+                    <h3>{subtitle.title}</h3>
+                    <p className="mt-6 blog-content">{subtitle.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
-
            </div>
 
 

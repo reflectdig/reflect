@@ -50,18 +50,18 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
               <a aria-label="Go to Home" href="/">Home</a>
               
             </li>
-            {/* <li
-              className={`menu-item ${showPageMenu ? "open" : ""}`}
-              onClick={handleShowPageMenu}
-            >
-              <a aria-label="Go to Our Doctor" href="/about">Our Doctor</a>
-              
-            </li> */}
             <li
               className={`menu-item ${showPageMenu ? "open" : ""}`}
               onClick={handleShowPageMenu}
             >
               <a aria-label="Go to About" href="/about">About</a>
+              
+            </li>
+            <li
+              className={`menu-item ${showPageMenu ? "open" : ""}`}
+              onClick={handleShowPageMenu}
+            >
+              <a aria-label="Go to Our Doctor" href="/blogs">Blogs</a>
               
             </li>
             <li

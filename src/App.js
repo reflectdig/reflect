@@ -50,7 +50,7 @@ const [isloggedon,setIsloggedon] = useState(storedToken || false)
           <Route path="/body" element={<Body />} />
           <Route path="/nail" element={<Nail />} />
           <Route path="/blogs" element={<BlogsList />} />
-          <Route path="/blogs/:blogsId" element={<Blogs />} />
+          <Route path="/blog/:id" element={<Blogs />} />
           <Route path="/medicalprocedure" element={<Medi />} />
           <Route path="/aestheticprocedure" element={<Aest />} />
           <Route path="/:cardId" element={<EventSingle />} />
