@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef, useState } from "react";
 import wfb from "../../assets/images/social/wfb.svg";
 import wt from "../../assets/images/social/wt.svg";
@@ -19,7 +17,6 @@ const HomeTwoHeader = () => {
     setShowSearchBar(!showSearchBar);
   };
   useEffect(() => {
-    // scrolling nav
     window.addEventListener("scroll", () => {
       let windowScroll = window.scrollY > 100;
       scrollNav.current.classList.toggle("rt-sticky-active", windowScroll);

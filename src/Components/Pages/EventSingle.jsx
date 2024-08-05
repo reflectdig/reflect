@@ -82,11 +82,11 @@ const EventSingle = () => {
     {
       card ?
     <div className="nav-tab-wrapper tabs  section-padding">
-      <div className="container">
-        <img src={card?.image} loading={'eager'} alt="" className=" lg:mb-10 mb-6 block w-full" />
+      <div className="container mt-5">
+        <img src={card?.image} loading={'eager'} alt={card.title} className=" lg:mb-10 mb-6 block w-full" />
         <div className="grid grid-cols-12 gap-[30px]">
           <div className="lg:col-span-8 col-span-12">
-            <h3>{card.title}</h3>
+            <h1 className='column-title'>{card.title}</h1>
             {card.qanda.map((item, index) => (
               <div className="lg:my-6 my-4" key={index}>
               <h4 className="font-bold" style={{fontSize: "1.3em", marginBottom: "10px"}}>{item.quest}</h4>

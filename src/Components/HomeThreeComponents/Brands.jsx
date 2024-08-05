@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { b1, b2, b3, b4, b5 } from "../../constant/images";
 

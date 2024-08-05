@@ -11,6 +11,7 @@ const HomeOne = () => {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
+
   return (
     <>
       <Header />

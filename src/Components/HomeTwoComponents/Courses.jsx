@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { courseData } from "../../constant/dummyData";
 import { file2, review, user2 } from "../../constant/images";
+
 const Courses = () => {
   return (
     <div className=" section-padding bg-[url('../images/all-img/section-bg-7.png')] bg-cover bg-no-repeat bg-center">

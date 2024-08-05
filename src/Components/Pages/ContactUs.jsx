@@ -5,12 +5,16 @@ import Footer from "../Footer";
 import Header from "../Header";
 import PageBanner from "../PageBanner";
 import contact from "../../assets/images/banner/contact.webp";
-import BookBtn from "../BookBtn";
+import HelmetWrapper from '../../HelmetWrapper';
 
 const ContactUs = () => {
   return (
     <>
       <Header />
+      <HelmetWrapper
+        title="Contact Us - Reflect Clinic"
+        description="Transform your skin and hair with Reflect Clinic's exceptional care. Contact us now to schedule a consultation and experience the difference."
+      />
       <PageBanner image={contact}/>
       <div className="nav-tab-wrapper tabs  section-padding">
         <div className="container">
@@ -20,10 +24,6 @@ const ContactUs = () => {
               <h2 className="column-title ">
               We're Just a <span className="text-secondary">Click</span> Away. 
               </h2>
-              
-              {/* <div className="mt-10">
-              <BookBtn btnclass={"hidden"} /> 
-              </div> */}
               <ul className=" list-item space-y-6 pt-8">
                 <li className="flex">
                   <div className="flex-none mr-6">

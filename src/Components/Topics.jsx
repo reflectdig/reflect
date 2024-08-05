@@ -11,7 +11,7 @@ const Topics = () => {
     <div className=" section-padding">
       <div className="container">
         <div className="text-center">
-          <div className="mini-title">Discover Our Advanced Tools and Techniques</div>
+          <h1 className="mini-title">Discover Our Advanced Tools and Techniques</h1>
           <div className="column-title ">
           Cutting-Edge  <span className="text-secondary">Technologies</span> 
           </div>

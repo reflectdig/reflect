@@ -3,8 +3,6 @@ import YoutubePlayer from 'react-youtube-player';
 import CardMedia from '@mui/material/CardMedia';
 import { IoCloseCircle } from "react-icons/io5";
 
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -16,9 +14,6 @@ import {
  
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/Firebase';
-
-
-
 
   const overlayStyle = {
     position: 'fixed',
@@ -77,9 +72,7 @@ const HandleOpen =()=>{
    }
 })
 }
-}
-    
-          
+}          
 
 const HandleClose = ()=>{
      if (sessionStorage.getItem('offerPopup') === 'true') { 

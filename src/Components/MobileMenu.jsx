@@ -113,9 +113,6 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
                 }
               >
                 
-               
-                
-                
                 <li>
                   <a aria-label="Go to Aesthetic Procedure" href={"/aestheticprocedure"}>
                   Aesthetic Procedure

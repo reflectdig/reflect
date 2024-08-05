@@ -38,24 +38,17 @@ const BLogStandard = () => {
 
   return (
     <>
-    
         <div className="container section-padding">
         <div className="md:flex gap-10">
         <div className="flex items-start mb-3  justify-center" style={{flexDirection:"column"}}>
-        <h1 className="mini-title ">Results</h1>
+        <h2 className="mini-title ">Results</h2>
         <div className="column-title  ">
             Before and After <span className="text-secondary"> Treatments</span>
         </div>
         <div className="team-dettext">Experience transformative skincare journeys. Witness stunning before and after results, as confidence and radiant skin emerge at Reflect Clinic</div>
-        
         </div>
-           
-          <div style={{margin:"auto"}} >
-            
-        
+      <div style={{margin:"auto"}} >
       <div className="flex item-center justify-center my-swiper" >
-      
-
       <Swiper
         slidesPerView={1}
         spaceBetween={0}

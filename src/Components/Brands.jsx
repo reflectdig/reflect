@@ -1,4 +1,3 @@
-
 import React from "react";
 import brand1 from "../assets/images/all-img/brands/1.svg";
 import brand2 from "../assets/images/all-img/brands/2.svg";

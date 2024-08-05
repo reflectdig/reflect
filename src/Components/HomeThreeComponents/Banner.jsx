@@ -1,7 +1,5 @@
-
 import React from "react";
 import { man4 } from "../../constant/images";
-
 
 const Banner = () => {
   return (

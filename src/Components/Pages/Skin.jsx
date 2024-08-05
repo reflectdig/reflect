@@ -5,6 +5,8 @@ import {categoryData} from "../../constant/dummyData"
 
 export default function Skin() {
   return (
-    <Courses image={image} categoryData={categoryData} />
+    <>
+      <Courses image={image} categoryData={categoryData} />
+    </>
   )
 }

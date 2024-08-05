@@ -1,0 +1,44 @@
+/* BlogPost.css */
+.blog-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.blog-content li {
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-content a {
+  color: blue; 
+  text-decoration: underline;
+}
+
+.blog-content a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.blog-content h2, .blog-content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #ccc;
+  margin-left: 0;
+  padding-left: 10px;
+  color: #666;
+  font-style: italic;
+}

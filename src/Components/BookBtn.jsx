@@ -12,15 +12,10 @@ import { FormControlLabel, FormLabel, Radio, RadioGroup } from '@mui/material';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../config/Firebase';
 
-
 export default function BookBtn(props) {
-
-
-
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [timeSlot, setTimeSlot] = useState('morning');
- 
 
   const { open, dispatch } = useGlobalState();
 
@@ -72,14 +67,10 @@ export default function BookBtn(props) {
     
     .then((res)=>res.json())
     .then(response=>{
-     
     })
-    
   };
 
-
     return (
-    
         <>
             <div className={`${props.btnclass} lg:block`} onClick={handleOpen} >
                 <a aria-label='Open Book Appointment Model' href='#' className="btn btn-primary font-bold py-[15px] px-8 lg:w-auto">
@@ -145,11 +136,8 @@ export default function BookBtn(props) {
                   <span>Confirm</span>
                 </Button>
               </DialogFooter>
-              
             </Dialog>
-           
             </div>
-            
         </> 
       );
     }

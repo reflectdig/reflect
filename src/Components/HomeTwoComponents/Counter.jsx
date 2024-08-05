@@ -1,5 +1,6 @@
 import React from "react";
 import { achivementCounter } from "../../constant/dummyData";
+
 const Counter = () => {
   return (
     <div className=" section-padding">

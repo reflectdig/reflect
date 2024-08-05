@@ -1,4 +1,3 @@
-/
 import React from "react";
 import { clock, file, star } from "../constant/images";
 

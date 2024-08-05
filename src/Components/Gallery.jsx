@@ -4,9 +4,6 @@ import gallery2 from "../assets/images/all-img/about2.png";
 import gallery3 from "../assets/images/all-img/about3.png";
 import gallery4 from "../assets/images/all-img/about4.png";
 
-
-
-
 let gallery = [
     {
     src:gallery1,

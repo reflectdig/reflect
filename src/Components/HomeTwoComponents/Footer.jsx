@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
   fbIcon,
@@ -160,7 +159,7 @@ const Footer = () => {
         </div>
 
         <div className="container border-t border-[#E9D4D0] py-8 text-center text-base">
-          &copy; Copyright 2022 | Edumim Template | All Rights Reserved
+          &copy; Copyright 2022 | Reflect Skin Care | All Rights Reserved
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/logo/logo2.webp";
 import MobileMenu from "./MobileMenu";
-
+import CanonicalUrl from "../HelmetWrapper"
 
 const Header = () => {
   const [activeMobileMenu, setActiveMobileMenu] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      
+      <CanonicalUrl />
       <header
         className="site-header  home-one-header top-0 w-full z-[999] rt-sticky "
         ref={scrollNav}

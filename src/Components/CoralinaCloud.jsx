@@ -1,4 +1,3 @@
-
 import React from "react";
 import mer from "../assets/images/team/mer.webp"
 

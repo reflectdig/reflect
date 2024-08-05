@@ -50,8 +50,6 @@ const CourseFilter = ({ activeData, mainData, setFilterData, setActiveData })=>{
                                 null
                             }
                             </div>
-
-
                             </li>
                         ) : (
                             <li className={activeData === item ? `filter fil-treat active` : "fil-treat filter"} onClick={() => setActiveData(item)}>
