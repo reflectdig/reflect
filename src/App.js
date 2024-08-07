@@ -58,8 +58,8 @@ function App() {
               <Route path="/medicalprocedure" element={<Medi />} />
               <Route path="/aestheticprocedure" element={<Aest />} />
               <Route path="/:cardId" element={<EventSingle />} />
-              <Route path="/krishnameera" element={<Mer />} />
-              <Route path="/divya" element={<Div />} />
+              {/* <Route path="/krishnameera" element={<Mer />} /> */}
+              {/* <Route path="/divya" element={<Div />} /> */}
               <Route path="*" element={<ErrorPage />} />
 
               {isloggedon.Login ? (

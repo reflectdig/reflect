@@ -4,7 +4,7 @@ import mer from "../assets/images/team/mer.webp"
 const CoralinaCloud = () => {
   return (
     <div className="section-padding  bg-contain   bg-no-repeat">
-      <div className="container">
+      {/* <div className="container">
         <div className="grid grid-cols-12 xl:gap-0 gap-[30px]">
           <div className="lg:col-span-4 col-span-12 ">
             <div className="bg-white shadow-box7 rounded-md max-w-[350px] lg:sticky lg:top-10">
@@ -63,7 +63,7 @@ const CoralinaCloud = () => {
             
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

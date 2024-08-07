@@ -6,7 +6,7 @@ import mer from "../assets/images/team/meera.webp";
 const Team = () => {
   return (
     <div className="pt-8 pb-8">
-      <div className="container">
+      {/* <div className="container">
         <div className="text-center">
           <div className="column-title ">
             Our Expert <span className="text-secondary">Consultants</span>
@@ -149,7 +149,7 @@ const Team = () => {
         <div className="cons-textn" style={{marginTop: "50px", marginBottom: "100px"}}>
           Her utmost priority is the well being of her patients and she incorporates her academic supremacy to assure the same. We at Reflect skin clinic strive to positively impact the quality of life through advancement in the science of dermatology and cosmetology.
           </div>
-      </div>
+      </div> */}
       
     </div>
   );

@@ -13,7 +13,7 @@ const Div = () => {
         image={image}
         num={1}
       />
-      <DivComp />
+      {/* <DivComp /> */}
       <Footer />
     </>
   );

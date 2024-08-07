@@ -181,13 +181,13 @@ const EventSingle = () => {
                   </span>
                   </a>
                 </div>
-                <div >
+                {/* <div >
                 <a href={"/unevenskintone"}>
                 <span className=" text-primary font-semibold">
                   Uneven Skin Tone
                 </span>
                 </a>
-                </div>
+                </div> */}
                 <div >
                 <a href={"/openpores"}>
                 <span className=" text-primary font-semibold">
@@ -195,13 +195,13 @@ const EventSingle = () => {
                   </span>
                 </a>
                 </div>
-                <div >
+                {/* <div >
                 <a href={"/skintags"}>
                 <span className=" text-primary font-semibold">
                   Skintags
                 </span>
                   </a>
-                </div>
+                </div> */}
                 <div>
                   <a href="/vaginaldischarge">
                   <span className=" text-primary font-semibold">
@@ -244,13 +244,13 @@ const EventSingle = () => {
                   </a>
                   
                   </div>
-                 <div>
+                 {/* <div>
                   <a href="/prematuregreyingofhair">
                   <span className=" text-primary font-semibold">
                      Premature Greying of Hair
                   </span>
                   </a>
-                  </div>
+                  </div> */}
                  
                   <hr />
 
@@ -319,32 +319,32 @@ const EventSingle = () => {
                   <hr />
                   <h5 style={{fontWeight: "bolder"}}>Aesthetic Procedure</h5>
                   <div>
-                  <a href="/chemicalpeeling">
+                  {/* <a href="/chemicalpeeling">
                   <span className=" text-primary font-semibold">
                   Chemical Peeling
                   </span>
-                  </a>
+                  </a> */}
                   </div>
                   <div>
-                  <a href="/laserskintoningandrejuvenation">
+                  {/* <a href="/laserskintoningandrejuvenation">
                   <span className=" text-primary font-semibold">
                   Laser Skin Toning and Rejuvenation
                   </span>
-                  </a>
+                  </a> */}
                   </div>
                   <div>
-                  <a href="/microneedling">
+                  {/* <a href="/microneedling">
                   <span className=" text-primary font-semibold">
                    Microneedling
                   </span>
-                  </a>
+                  </a> */}
                   </div>
                   <div>
-                  <a href="/prp">
+                  {/* <a href="/prp">
                   <span className=" text-primary font-semibold">
                    PRP
                   </span>
-                  </a>
+                  </a> */}
                   </div>
                   <div>
                   <a href="/excessivebodyhairremovalwithlaser">
@@ -389,11 +389,11 @@ const EventSingle = () => {
                    </a>
                    </div>
                    <div > 
-                    <a href={"/tattooremoval"}>
+                    {/* <a href={"/tattooremoval"}>
                      <span className=" text-primary font-semibold">
                       Tattoo Removal
                       </span>
-                    </a>
+                    </a> */}
                    </div>
                   
                   
@@ -404,12 +404,12 @@ const EventSingle = () => {
                         </span>
                       </a>
                     </div>
-                  <hr/>
+                  {/* <hr/> */}
                   </div>
                   :
                   null
                   }
-                  {
+                  {/* {
                     treatment === "MProducer" || treatment === "AProducer"  ?
                   <div className="list space-y-2">
                   <hr />
@@ -482,7 +482,7 @@ const EventSingle = () => {
                   </div>
                   :
                   null
-                  }
+                  } */}
 
               </div>
             </div>

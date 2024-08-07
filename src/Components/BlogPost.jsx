@@ -87,7 +87,7 @@ const BlogPost = () => {
                           <div style={{ display: "flex", justifyContent: "center", alignItems: "start", marginTop: "3px" }}>
                             <MdLocationPin size="20px" />
                           </div>
-                          <div>Ekaparnika Towers, First Floor, Ram Lakshman Nagar, GV Residency Link Road Near National Model School, Sowripalayam, Post, Coimbatore, Tamil Nadu 641028</div>
+                          <div>No.2, Ram Lakshman Nagar, Post, near national Model school, backside, Sowri Palayam, Coimbatore, Tamil Nadu 641028</div>
                         </div>
                       </li>
                       <li className="flex space-x-3">

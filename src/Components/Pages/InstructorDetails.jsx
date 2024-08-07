@@ -8,12 +8,12 @@ const InstructorDetails = () => {
   return (
     <>
       <Header />
-      <PageBanner
+      {/* <PageBanner
         title={"About Instructor"}
         pageTitle={"Team Member"}
         num={1}
       />
-      <CoralinaCloud />
+      <CoralinaCloud /> */}
       <Footer />
     </>
   );

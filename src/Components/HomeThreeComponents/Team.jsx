@@ -8,11 +8,11 @@ const Team = () => {
       <div className="container">
         <div className="text-center">
           <div className="m-0 p-0">
-            <h2>Our Expert <span className="text-secondary">Consultants</span></h2>
+            {/* <h2>Our Expert <span className="text-secondary">Consultants</span></h2> */}
           </div>
         </div>
-        <CoralinaCloud />
-        <DivComp />        
+        {/* <CoralinaCloud />
+        <DivComp />         */}
       </div>
     </div>
   );

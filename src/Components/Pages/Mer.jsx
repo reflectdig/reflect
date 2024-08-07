@@ -13,7 +13,7 @@ const Mer = () => {
         image={image}
         num={1}
       />
-      <CoralinaCloud />
+      {/* <CoralinaCloud /> */}
       <Footer />
     </>
   );

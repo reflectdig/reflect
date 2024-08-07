@@ -78,7 +78,7 @@ const Footer = () => {
                   </div>
                   <div className="flex-1">
                     <h4 className="lg:text-xl text-lg mb-1 text-white">Office :</h4>
-                    <div className="cont-footer-content">Ekaparnika Towers, First Floor, Ram Lakshman Nagar, GV Residency Link Road Near National Model School, Sowripalayam, Post, Coimbatore, Tamil Nadu 641028</div>
+                    <div className="cont-footer-content">No.2, Ram Lakshman Nagar, Post, near national Model school, backside, Sowri Palayam, Coimbatore, Tamil Nadu 641028</div>
                   </div>
                 </li>
               </ul>

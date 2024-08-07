@@ -126,8 +126,8 @@ export const teamData = [
   { img: team4, name: "Selina Gomez", title: "UI/UX Designer" },
 ];
 export const instructorData = [
-  { img: mer, name: "Dr. M.S KRISHNA MEERA", title: "Dermatologist ", link: "/krishnameera" },
-  { img: div, name: "Dr. Divya", title: "Dermatologist", link: "/divya" },
+//   { img: mer, name: "Dr. M.S KRISHNA MEERA", title: "Dermatologist ", link: "/krishnameera" },
+//   { img: div, name: "Dr. Divya", title: "Dermatologist", link: "/divya" },
 ];
 
 export const blogsData = [
@@ -360,30 +360,30 @@ export const categoryDataHair = {
       },
     ]
   },
-  prematuregreyingofhair: {
-    thumb: prematuregreying1,
-    image: prematuregreying,
-    title: "Premature Greying of Hair",
-    desPreview: "Premature graying or canities may reflect a genetically regulated early exhaustion of the melanin transfer potential  or some defect in cell activation/migration (simply put it can run in families). This genetic tendency can be compounded by environmental factors, inflammation, or psychological stress. Nutritional deficiencies like",
-    qanda: [
-      {
-        quest: "Premature greying of hair",
-        ans: "The colour of the hair is produced by the pigment called melanin, just as the skin. The diminishing of this pigment in hair produces a range of colors from normal to white that is perceived as gray."
-      },
-      {
-        quest: "Is my gerying premature ?",
-        ans: "Premature is when it occurs within 25 years of age. (in Asians)",
-      },
-      {
-        quest: "Why does it occur?",
-        ans: "Premature graying or canities may reflect a genetically regulated early exhaustion of the melanin transfer potential  or some defect in cell activation/migration (simply put it can run in families). This genetic tendency can be compounded by environmental factors, inflammation, or psychological stress. Nutritional deficiencies like chronic protein loss (due to food intake with poor micronutrients,  kwashiorkor, nephrosis, celiac disease, and other causes of malabsorption), severe iron, vit B12 deficiency and copper deficiency. Stress certain drugs Smoking"
-      },
-      {
-        quest: "Can it be treated?",
-        ans: "Identifying  & stopping the trigger. Adding the right nutritional supplements. Hair tonics that can control and  reverse greying to some extent. Camouflage techniques as the last resort - Using chemical free, PPD free hair colours that are safe for all age groups."
-      }
-    ]
-  }
+//   prematuregreyingofhair: {
+//     thumb: prematuregreying1,
+//     image: prematuregreying,
+//     title: "Premature Greying of Hair",
+//     desPreview: "Premature graying or canities may reflect a genetically regulated early exhaustion of the melanin transfer potential  or some defect in cell activation/migration (simply put it can run in families). This genetic tendency can be compounded by environmental factors, inflammation, or psychological stress. Nutritional deficiencies like",
+//     qanda: [
+//       {
+//         quest: "Premature greying of hair",
+//         ans: "The colour of the hair is produced by the pigment called melanin, just as the skin. The diminishing of this pigment in hair produces a range of colors from normal to white that is perceived as gray."
+//       },
+//       {
+//         quest: "Is my gerying premature ?",
+//         ans: "Premature is when it occurs within 25 years of age. (in Asians)",
+//       },
+//       {
+//         quest: "Why does it occur?",
+//         ans: "Premature graying or canities may reflect a genetically regulated early exhaustion of the melanin transfer potential  or some defect in cell activation/migration (simply put it can run in families). This genetic tendency can be compounded by environmental factors, inflammation, or psychological stress. Nutritional deficiencies like chronic protein loss (due to food intake with poor micronutrients,  kwashiorkor, nephrosis, celiac disease, and other causes of malabsorption), severe iron, vit B12 deficiency and copper deficiency. Stress certain drugs Smoking"
+//       },
+//       {
+//         quest: "Can it be treated?",
+//         ans: "Identifying  & stopping the trigger. Adding the right nutritional supplements. Hair tonics that can control and  reverse greying to some extent. Camouflage techniques as the last resort - Using chemical free, PPD free hair colours that are safe for all age groups."
+//       }
+//     ]
+//   }
 }
 
 export const categoryData = {
@@ -604,51 +604,51 @@ export const categoryData = {
       }
     ]
   },
-  unevenskintone: {
-    thumb: unevenskintone1,
-    image: unevenskintone,
-    title: "Uneven Skin Tone",
-    desPreview: "Uneven skin tone, a common concern for many individuals, can be attributed to various factors. Just as with skin allergies, the causes of uneven skin tone are diverse and can range from external environmental factors to internal predispositions. In this blog post, we'll explore the different aspects of uneven skin tone, its potential causes, and how to address and prevent this dermatological concern.",
-    qanda: [
-      {
-        quest: "Uneven Skin Tone ",
-        ans: "Our skin is a canvas that reflects our health and vitality. However, for many, achieving a smooth and even skin tone can be a challenge. In this blog post, we will explore what uneven skin tone is, delve into its symptoms, and discuss various treatment options to help you achieve a more radiant complexion. "
-      },
-      {
-        quest:"What Is Uneven Skin Tone?",
-        ans:"Uneven skin tone refers to the irregular distribution of pigmentation across the skin, resulting in areas of discoloration, hyperpigmentation, or redness. This common dermatological concern can be influenced by a variety of factors, including sun exposure, hormonal changes, genetics, and inflammation. Understanding the root causes is essential for implementing effective treatment strategies."
-      },
-      {
-        quest:"Symptoms of Uneven Skin Tone:",
-        ans:[`Dark Spots: Hyperpigmentation can manifest as dark spots or patches on the skin, often a result of increased melanin production.`,
-            `Redness and Inflammation: Uneven skin tone may include areas of redness and inflammation, indicating sensitivity or irritation.`,
-            `Dull or Tired Appearance: Skin may appear dull or lackluster due to uneven pigmentation, affecting overall radiance.`,
-            `Sun Damage: Prolonged sun exposure without adequate protection can contribute to uneven skin tone, with sunspots being a common symptom.`
-          ]
-      }, 
-      {
-        quest:"Treatment Options:",
-        ans:[`Sunscreen and Sun Protection:
-            The foundation of any treatment plan for uneven skin tone is sun protection. Regular use of a broad-spectrum sunscreen with a high SPF helps prevent further pigmentation and protects the skin from harmful UV rays.`,
-            `Topical Brightening Agents:
-            Products containing ingredients like vitamin C, niacinamide, and alpha hydroxy acids can help lighten dark spots and promote a more even skin tone over time. These ingredients work to inhibit melanin production and encourage skin renewal.`,
-            `Chemical Peels:
-            Chemical peels, performed by dermatologists or skincare professionals, involve the application of a chemical solution to exfoliate the outer layer of the skin. This can reduce hyperpigmentation and improve overall skin texture.`,
-            `Laser Therapy:
-            Laser treatments target pigmented areas with precision, breaking down melanin and promoting even skin tone. This option is effective for more stubborn pigmentation concerns.`,
-            `Microdermabrasion:
-            This non-invasive procedure involves gently exfoliating the skin to improve texture and reduce pigmentation. It's a less aggressive option suitable for mild cases of uneven skin tone.`
-      ]
-      },
-      {
-        quest:"Conclusion:",
-        ans:"Achieving a harmonious and radiant complexion is possible with the right understanding and targeted treatments. Whether through diligent skincare practices at home or professional interventions, individuals can take proactive steps to address uneven skin tone. Consulting with a dermatologist can provide personalized guidance and ensure a tailored approach to achieving skin tone goals. Embrace the journey toward healthier, more luminous skin!"
-      }
+//   unevenskintone: {
+//     thumb: unevenskintone1,
+//     image: unevenskintone,
+//     title: "Uneven Skin Tone",
+//     desPreview: "Uneven skin tone, a common concern for many individuals, can be attributed to various factors. Just as with skin allergies, the causes of uneven skin tone are diverse and can range from external environmental factors to internal predispositions. In this blog post, we'll explore the different aspects of uneven skin tone, its potential causes, and how to address and prevent this dermatological concern.",
+//     qanda: [
+//       {
+//         quest: "Uneven Skin Tone ",
+//         ans: "Our skin is a canvas that reflects our health and vitality. However, for many, achieving a smooth and even skin tone can be a challenge. In this blog post, we will explore what uneven skin tone is, delve into its symptoms, and discuss various treatment options to help you achieve a more radiant complexion. "
+//       },
+//       {
+//         quest:"What Is Uneven Skin Tone?",
+//         ans:"Uneven skin tone refers to the irregular distribution of pigmentation across the skin, resulting in areas of discoloration, hyperpigmentation, or redness. This common dermatological concern can be influenced by a variety of factors, including sun exposure, hormonal changes, genetics, and inflammation. Understanding the root causes is essential for implementing effective treatment strategies."
+//       },
+//       {
+//         quest:"Symptoms of Uneven Skin Tone:",
+//         ans:[`Dark Spots: Hyperpigmentation can manifest as dark spots or patches on the skin, often a result of increased melanin production.`,
+//             `Redness and Inflammation: Uneven skin tone may include areas of redness and inflammation, indicating sensitivity or irritation.`,
+//             `Dull or Tired Appearance: Skin may appear dull or lackluster due to uneven pigmentation, affecting overall radiance.`,
+//             `Sun Damage: Prolonged sun exposure without adequate protection can contribute to uneven skin tone, with sunspots being a common symptom.`
+//           ]
+//       }, 
+//       {
+//         quest:"Treatment Options:",
+//         ans:[`Sunscreen and Sun Protection:
+//             The foundation of any treatment plan for uneven skin tone is sun protection. Regular use of a broad-spectrum sunscreen with a high SPF helps prevent further pigmentation and protects the skin from harmful UV rays.`,
+//             `Topical Brightening Agents:
+//             Products containing ingredients like vitamin C, niacinamide, and alpha hydroxy acids can help lighten dark spots and promote a more even skin tone over time. These ingredients work to inhibit melanin production and encourage skin renewal.`,
+//             `Chemical Peels:
+//             Chemical peels, performed by dermatologists or skincare professionals, involve the application of a chemical solution to exfoliate the outer layer of the skin. This can reduce hyperpigmentation and improve overall skin texture.`,
+//             `Laser Therapy:
+//             Laser treatments target pigmented areas with precision, breaking down melanin and promoting even skin tone. This option is effective for more stubborn pigmentation concerns.`,
+//             `Microdermabrasion:
+//             This non-invasive procedure involves gently exfoliating the skin to improve texture and reduce pigmentation. It's a less aggressive option suitable for mild cases of uneven skin tone.`
+//       ]
+//       },
+//       {
+//         quest:"Conclusion:",
+//         ans:"Achieving a harmonious and radiant complexion is possible with the right understanding and targeted treatments. Whether through diligent skincare practices at home or professional interventions, individuals can take proactive steps to address uneven skin tone. Consulting with a dermatologist can provide personalized guidance and ensure a tailored approach to achieving skin tone goals. Embrace the journey toward healthier, more luminous skin!"
+//       }
           
       
       
-    ]
-  },
+//     ]
+//   },
   openpores: {
     thumb: openpores1,
     image: openpores,
@@ -675,51 +675,51 @@ export const categoryData = {
       
     ]
   },
-  skintags: {
-    thumb: skintag1,
-    image: skintag,
-    title: "Skin Tags",
-    desPreview: "Skin Tags",
-    qanda: [
-      {
-        quest: "Skin Tags ",
-        ans: "Skin tags, medically known as acrochordons, are common skin growths that often go unnoticed but can be a source of concern for some individuals. These benign, soft, and often small protrusions are typically attached to the skin by a thin stalk. In this blog post, we'll delve into what skin tags are, explore their symptoms, and discuss various treatment options. "
-      },
-      {
-        quest:"What Are Skin Tags? ",
-        ans:"Skin tags are non-cancerous growths that can develop in areas where skin rubs against skin or clothing. They are usually flesh-colored or slightly darker and can vary in size, ranging from a few millimeters to a centimeter or more. While skin tags are generally harmless, they can be bothersome if they catch on clothing or jewelry, leading some people to seek removal for cosmetic reasons."
-      },
-      {
-        quest:"Symptoms of Skin Tags:",
-        ans:"Skin tags are often asymptomatic, meaning they don't cause pain or discomfort. However, certain factors may contribute to their formation, including obesity, hormonal changes during pregnancy, and genetics. Common areas for skin tags to develop include the neck, underarms, groin, and eyelids. Individuals may notice these small, hanging growths while grooming or if they become irritated."
-      },
-      {
-        quest:"Treatment Options:",
-        ans:""
-      },
-      {
-        quest:"1. Home Remedies:",
-        ans:[`Tying Off: Some people choose to tie off skin tags at the base with a piece of dental floss or thread. This method cuts off the blood supply, causing the skin tag to fall off over time.`,
-             `Topical Applications: Over-the-counter creams and solutions may help shrink and eventually remove skin tags. However, their effectiveness can vary.`]
-      },
-      {
-        quest:"2. Medical Procedures:",
-        ans:[`Cauterization: Skin tags can be removed by cauterization, a process that involves burning them off using an electrical current.`,
-             `Cryotherapy: This involves freezing the skin tag with liquid nitrogen, causing it to fall off after some time.`,
-            `Surgical Removal: A doctor may opt for surgical excision, especially for larger skin tags. This is a quick and effective method performed in a medical office.`,
-            ]
-      },
-      {
-        quest:"3. Professional Medical Guidance:",
-        ans:`It's crucial to consult with a dermatologist or healthcare professional before attempting any removal method, especially if the skin tag is in a sensitive area or if there is uncertainty about its nature.`
-      },
-      {
-        quest:"Conclusion:",
-        ans:"While skin tags are generally harmless, their presence can affect one's confidence and comfort. Understanding the symptoms and exploring appropriate treatment options, whether through at-home remedies or professional medical procedures, empowers individuals to make informed decisions about managing or removing skin tags. Always seek guidance from a healthcare professional for personalized advice and safe removal."
-      },
+//   skintags: {
+//     thumb: skintag1,
+//     image: skintag,
+//     title: "Skin Tags",
+//     desPreview: "Skin Tags",
+//     qanda: [
+//       {
+//         quest: "Skin Tags ",
+//         ans: "Skin tags, medically known as acrochordons, are common skin growths that often go unnoticed but can be a source of concern for some individuals. These benign, soft, and often small protrusions are typically attached to the skin by a thin stalk. In this blog post, we'll delve into what skin tags are, explore their symptoms, and discuss various treatment options. "
+//       },
+//       {
+//         quest:"What Are Skin Tags? ",
+//         ans:"Skin tags are non-cancerous growths that can develop in areas where skin rubs against skin or clothing. They are usually flesh-colored or slightly darker and can vary in size, ranging from a few millimeters to a centimeter or more. While skin tags are generally harmless, they can be bothersome if they catch on clothing or jewelry, leading some people to seek removal for cosmetic reasons."
+//       },
+//       {
+//         quest:"Symptoms of Skin Tags:",
+//         ans:"Skin tags are often asymptomatic, meaning they don't cause pain or discomfort. However, certain factors may contribute to their formation, including obesity, hormonal changes during pregnancy, and genetics. Common areas for skin tags to develop include the neck, underarms, groin, and eyelids. Individuals may notice these small, hanging growths while grooming or if they become irritated."
+//       },
+//       {
+//         quest:"Treatment Options:",
+//         ans:""
+//       },
+//       {
+//         quest:"1. Home Remedies:",
+//         ans:[`Tying Off: Some people choose to tie off skin tags at the base with a piece of dental floss or thread. This method cuts off the blood supply, causing the skin tag to fall off over time.`,
+//              `Topical Applications: Over-the-counter creams and solutions may help shrink and eventually remove skin tags. However, their effectiveness can vary.`]
+//       },
+//       {
+//         quest:"2. Medical Procedures:",
+//         ans:[`Cauterization: Skin tags can be removed by cauterization, a process that involves burning them off using an electrical current.`,
+//              `Cryotherapy: This involves freezing the skin tag with liquid nitrogen, causing it to fall off after some time.`,
+//             `Surgical Removal: A doctor may opt for surgical excision, especially for larger skin tags. This is a quick and effective method performed in a medical office.`,
+//             ]
+//       },
+//       {
+//         quest:"3. Professional Medical Guidance:",
+//         ans:`It's crucial to consult with a dermatologist or healthcare professional before attempting any removal method, especially if the skin tag is in a sensitive area or if there is uncertainty about its nature.`
+//       },
+//       {
+//         quest:"Conclusion:",
+//         ans:"While skin tags are generally harmless, their presence can affect one's confidence and comfort. Understanding the symptoms and exploring appropriate treatment options, whether through at-home remedies or professional medical procedures, empowers individuals to make informed decisions about managing or removing skin tags. Always seek guidance from a healthcare professional for personalized advice and safe removal."
+//       },
       
-    ]
-  },
+//     ]
+//   },
   vaginaldischarge: {
     title: "Vaginal Discharge",
     desPreview :"Vaginal discharge is one of the common reasons for gynecological consultation. Not all women with vaginal symptoms have an underlying medical problem. Patient's history and physical examination findings along with appropriate tests may suggest a diagnosis. Effective treatment of vaginal discharge requires that the cause be established.",
@@ -785,62 +785,62 @@ export const categoryDataAest = {
       }
     ]
   },
-  laserskintoningandrejuvenation: {
-    thumb: laserSkinToningAnd1,
-    image: laserSkinToningAnd,
-    title: "Laser Skin Toning and Rejuvenation",
-    desPreview: "SKIN TONING CAN BE DONE IN MULTIPLE WAYS. Depending on individual patient requirements, it can be the epidermis or the dermis that needs care. The epidermis can be affected with tanning, post inflammatory pigmentation from acne, constant friction, chemicals (such as bindi, pollutants, cosmetics etc.)",
-    qanda: [
-      {
-        quest: "",
-        ans: "SKIN TONING CAN BE DONE IN MULTIPLE WAYS . Depending on individual patient requirements, it can be the epidermis or the dermis that needs care. The epidermis can be affected with tanning, post inflammatory pigmentation from acne, constant friction, chemicals( such as bindi, pollutants, cosmetics etc,.), injury, aging changes such as wrinkles etc., The dermis is involved in ways such as deep wrinkles, scars, nodules etc."
-      },
-      {
-        quest: "Epidermal Rejuvenation",
-        ans: "	Epidermal concerns  can be addressed in various ways. Chemical peeling - Peeling away the superficial skin helps bring out the refreshed skin and simultaneously addresses acne, pigmentation, pores, superficial wrinkles, Microdermabrasion - This is a procedure done to manually remove the superficial worn out dead layers of the skin without the help of any chemicals or drugs. It can be done as a separate procedure or can be combined with peels, medi facials in order to provide better penetration  of the active ingredients. "
-      },
-      {
-        quest: "Dermal rejuvenation",
-        ans: "Medium depth chemical peels Medium depth chemical peels, Laser toning with Nd Yag - Gentle yag pro using 1064nm Rejuvenation of the skin with this technology is done by heating up the dermal collagen without affecting the epidermis.The heated up collagen then undergoes activation and undergoes regeneration which inturn tightens and lifts up the skin. It has a great effect on the fine wrinkles of the face.  "
-      }
-    ]
-  },
-  microneedling: {
-    thumb: microneedling1,
-    image: microneedling,
-    title: "Microneedling",
-    desPreview: "	Scars, pores and unevenness of the skin is mainly due to dermal changes. The dermal changes are mostly permanent . And microneedling is the technique where multiple needles are used to to puncture the skin under anesthesia (numbing creams). This controlled",
-    qanda : [
-      {
-        quest: "",
-        ans: "Scars, pores and unevenness of the skin is mainly due to dermal changes. The dermal changes are mostly permanent . And microneedling is the technique where multiple needles are used to to puncture the skin under anesthesia (numbing creams). This controlled injury with needles entering the skin for a few millimetres of skin stimulates the collagen. In the attempt to heal this injury, the adjacent scar is repaired collaterally. The penetration of the microneedles into the skin leads to a release of growth factors and triggers the wound healing cascade, encouraging collagen production which leads to younger looking skin. The needles also help to mechanically break down the scar tissue. "
-      },
-      {
-        quest: "MnRF -Microneedling with Radiofrequency",
-        ans: "This is an innovation which adds radiofrequency energy to the above microneedling technique. Microneedling with radiofrequency is a minimally invasive treatment to reduce the appearance of wrinkles, scarring, and sagging skin. Microneedling with radiofrequency uses the added technology of flow needles to deliver RF energy into the dermis. The RF energy heats the dermis which not only encourages collagen growth but tissue tightening as well.Since the epidermis is not destroyed, as is the case with microneedling treatments, recovery time is much shorter when compared to more aggressive laser resurfacing treatments or deep chemical peels."
-      }
-    ]
-  },
-  prp: {
-    thumb: prp1,
-    image: prp,
-    title: "PRP",
-    desPreview: "PRP  refers to treatment with platelet rich plasma. Platelets are rich in growth factors and  when injected it can cause renewal and regeneration in desired body tissues.",
-    qanda: [
-      {
-        quest: "",
-        ans: "PRP  refers to treatment with platelet rich plasma. Platelets are rich in growth factors and  when injected it can cause renewal and regeneration in desired body tissues."
-      },
-      {
-        quest: "How is it done?",
-        ans: "	Platelets are cells found in the blood. The blood sample of the patient is taken and centrifuged to obtain the platelets in high concentration. And by this process we get a plasma rich in platelets which can be used by injecting into the area of interest.",
-      },
-      {
-        quest: "What are the uses of PRP in skin ?",
-        ans: "Androgenic alopecia Hair fall - both men and women - can cause significant improvement, decreasing loss and increasing the density of hair. scar treatment Acne scars - scars are areas with fibrosis. PRP causes  collagen regeneration and diminish the scars depth and texture, Non healing ulcers Chronic nonhealing ulcers - most commonly encountered in legs. Repeated failed treatment in healing of an ulcer  can be successfully treated by PRP dressings."
-      }
-    ]
-  },
+//   laserskintoningandrejuvenation: {
+//     thumb: laserSkinToningAnd1,
+//     image: laserSkinToningAnd,
+//     title: "Laser Skin Toning and Rejuvenation",
+//     desPreview: "SKIN TONING CAN BE DONE IN MULTIPLE WAYS. Depending on individual patient requirements, it can be the epidermis or the dermis that needs care. The epidermis can be affected with tanning, post inflammatory pigmentation from acne, constant friction, chemicals (such as bindi, pollutants, cosmetics etc.)",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "SKIN TONING CAN BE DONE IN MULTIPLE WAYS . Depending on individual patient requirements, it can be the epidermis or the dermis that needs care. The epidermis can be affected with tanning, post inflammatory pigmentation from acne, constant friction, chemicals( such as bindi, pollutants, cosmetics etc,.), injury, aging changes such as wrinkles etc., The dermis is involved in ways such as deep wrinkles, scars, nodules etc."
+//       },
+//       {
+//         quest: "Epidermal Rejuvenation",
+//         ans: "	Epidermal concerns  can be addressed in various ways. Chemical peeling - Peeling away the superficial skin helps bring out the refreshed skin and simultaneously addresses acne, pigmentation, pores, superficial wrinkles, Microdermabrasion - This is a procedure done to manually remove the superficial worn out dead layers of the skin without the help of any chemicals or drugs. It can be done as a separate procedure or can be combined with peels, medi facials in order to provide better penetration  of the active ingredients. "
+//       },
+//       {
+//         quest: "Dermal rejuvenation",
+//         ans: "Medium depth chemical peels Medium depth chemical peels, Laser toning with Nd Yag - Gentle yag pro using 1064nm Rejuvenation of the skin with this technology is done by heating up the dermal collagen without affecting the epidermis.The heated up collagen then undergoes activation and undergoes regeneration which inturn tightens and lifts up the skin. It has a great effect on the fine wrinkles of the face.  "
+//       }
+//     ]
+//   },
+//   microneedling: {
+//     thumb: microneedling1,
+//     image: microneedling,
+//     title: "Microneedling",
+//     desPreview: "	Scars, pores and unevenness of the skin is mainly due to dermal changes. The dermal changes are mostly permanent . And microneedling is the technique where multiple needles are used to to puncture the skin under anesthesia (numbing creams). This controlled",
+//     qanda : [
+//       {
+//         quest: "",
+//         ans: "Scars, pores and unevenness of the skin is mainly due to dermal changes. The dermal changes are mostly permanent . And microneedling is the technique where multiple needles are used to to puncture the skin under anesthesia (numbing creams). This controlled injury with needles entering the skin for a few millimetres of skin stimulates the collagen. In the attempt to heal this injury, the adjacent scar is repaired collaterally. The penetration of the microneedles into the skin leads to a release of growth factors and triggers the wound healing cascade, encouraging collagen production which leads to younger looking skin. The needles also help to mechanically break down the scar tissue. "
+//       },
+//       {
+//         quest: "MnRF -Microneedling with Radiofrequency",
+//         ans: "This is an innovation which adds radiofrequency energy to the above microneedling technique. Microneedling with radiofrequency is a minimally invasive treatment to reduce the appearance of wrinkles, scarring, and sagging skin. Microneedling with radiofrequency uses the added technology of flow needles to deliver RF energy into the dermis. The RF energy heats the dermis which not only encourages collagen growth but tissue tightening as well.Since the epidermis is not destroyed, as is the case with microneedling treatments, recovery time is much shorter when compared to more aggressive laser resurfacing treatments or deep chemical peels."
+//       }
+//     ]
+//   },
+//   prp: {
+//     thumb: prp1,
+//     image: prp,
+//     title: "PRP",
+//     desPreview: "PRP  refers to treatment with platelet rich plasma. Platelets are rich in growth factors and  when injected it can cause renewal and regeneration in desired body tissues.",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "PRP  refers to treatment with platelet rich plasma. Platelets are rich in growth factors and  when injected it can cause renewal and regeneration in desired body tissues."
+//       },
+//       {
+//         quest: "How is it done?",
+//         ans: "	Platelets are cells found in the blood. The blood sample of the patient is taken and centrifuged to obtain the platelets in high concentration. And by this process we get a plasma rich in platelets which can be used by injecting into the area of interest.",
+//       },
+//       {
+//         quest: "What are the uses of PRP in skin ?",
+//         ans: "Androgenic alopecia Hair fall - both men and women - can cause significant improvement, decreasing loss and increasing the density of hair. scar treatment Acne scars - scars are areas with fibrosis. PRP causes  collagen regeneration and diminish the scars depth and texture, Non healing ulcers Chronic nonhealing ulcers - most commonly encountered in legs. Repeated failed treatment in healing of an ulcer  can be successfully treated by PRP dressings."
+//       }
+//     ]
+//   },
   excessivebodyhairremovalwithlaser: {
     thumb: hairRemovalWithLaser1,
     image: hairRemovalWithLaser,
@@ -952,38 +952,38 @@ export const categoryDataAest = {
       }
     ]
   },
-  tattooremoval  : {
-    thumb: Tattooremoval1,
-    image: Tattooremoval,
-    title: "Tattoo Removal  ",
-    desPreview: "Tattoo removal  ",
-    qanda: [
-      {
-        quest: "Tattoo removal  ",
-        ans: "Tattoos, once considered permanent marks on the canvas of our skin, now come with options for removal. Whether you're questioning the process, wondering about the cost, or curious about the aftercare, this blog post aims to provide insights into the world of tattoo removal.  "
-      },
-      {
-        quest:"Do I Need Tattoo Removal, and Why?",
-        ans:"Just like acne, tattoos can be a mix of colors and may or may not respond to DIY removal methods. They might be a source of regret, a relic from the past, or simply something you've outgrown. The decision to undergo tattoo removal is personal, often driven by aesthetic concerns. Understanding the process and its implications is the first step."
-      },
-      {
-        quest:"The Tattoo Removal Journey: A Step-by-Step Guide",
-        ans:"Tattoo removal involves a range of techniques, from topical creams and lasers to more intensive methods like chemical peeling and dermabrasion. Much like acne treatment, the process may vary based on the size, color, and depth of the tattoo. This blog will explore the various options available and guide you through what to expect during and after each session."
-      },
-      {
-        quest:"Is Tattoo Removal Expensive?",
-        ans:"Similar to acne treatment, the cost of tattoo removal can be tailored to individual needs and the complexity of the removal plan. This section will break down the factors influencing the cost, including the size and colors of the tattoo, the chosen removal method, and the number of sessions required. Understanding the financial aspect is crucial for those considering tattoo removal."
-      },
-      {
-        quest:"Addressing Tattoo Scars and Pigmentation: What to Expect",
-        ans:"Just as acne scars can be treated, so too can scars left behind by tattoo removal. This section will delve into the possible outcomes of tattoo removal, discussing potential scarring and pigmentation changes. Much like acne, a patient and stepwise approach can contribute to achieving optimal results. The blog will outline the available treatments for post-removal care, ensuring a comprehensive understanding of the entire process."
-      },
-      {
-        quest:"Conclusion",
-        ans:"In conclusion, the decision to remove a tattoo is a personal one, much like addressing acne concerns. This blog post aims to equip readers with the knowledge needed to make informed decisions about tattoo removal. From understanding the intricacies of the removal process to managing post-removal care, this guide will serve as a valuable resource for those embarking on the journey of tattoo removal."
-      },
-    ]
-  },
+//   tattooremoval  : {
+//     thumb: Tattooremoval1,
+//     image: Tattooremoval,
+//     title: "Tattoo Removal  ",
+//     desPreview: "Tattoo removal  ",
+//     qanda: [
+//       {
+//         quest: "Tattoo removal  ",
+//         ans: "Tattoos, once considered permanent marks on the canvas of our skin, now come with options for removal. Whether you're questioning the process, wondering about the cost, or curious about the aftercare, this blog post aims to provide insights into the world of tattoo removal.  "
+//       },
+//       {
+//         quest:"Do I Need Tattoo Removal, and Why?",
+//         ans:"Just like acne, tattoos can be a mix of colors and may or may not respond to DIY removal methods. They might be a source of regret, a relic from the past, or simply something you've outgrown. The decision to undergo tattoo removal is personal, often driven by aesthetic concerns. Understanding the process and its implications is the first step."
+//       },
+//       {
+//         quest:"The Tattoo Removal Journey: A Step-by-Step Guide",
+//         ans:"Tattoo removal involves a range of techniques, from topical creams and lasers to more intensive methods like chemical peeling and dermabrasion. Much like acne treatment, the process may vary based on the size, color, and depth of the tattoo. This blog will explore the various options available and guide you through what to expect during and after each session."
+//       },
+//       {
+//         quest:"Is Tattoo Removal Expensive?",
+//         ans:"Similar to acne treatment, the cost of tattoo removal can be tailored to individual needs and the complexity of the removal plan. This section will break down the factors influencing the cost, including the size and colors of the tattoo, the chosen removal method, and the number of sessions required. Understanding the financial aspect is crucial for those considering tattoo removal."
+//       },
+//       {
+//         quest:"Addressing Tattoo Scars and Pigmentation: What to Expect",
+//         ans:"Just as acne scars can be treated, so too can scars left behind by tattoo removal. This section will delve into the possible outcomes of tattoo removal, discussing potential scarring and pigmentation changes. Much like acne, a patient and stepwise approach can contribute to achieving optimal results. The blog will outline the available treatments for post-removal care, ensuring a comprehensive understanding of the entire process."
+//       },
+//       {
+//         quest:"Conclusion",
+//         ans:"In conclusion, the decision to remove a tattoo is a personal one, much like addressing acne concerns. This blog post aims to equip readers with the knowledge needed to make informed decisions about tattoo removal. From understanding the intricacies of the removal process to managing post-removal care, this guide will serve as a valuable resource for those embarking on the journey of tattoo removal."
+//       },
+//     ]
+//   },
   miliaandskintagremoval : {
     thumb: Miliaandskintagremoval1,
     image: Miliaandskintagremoval,
@@ -1144,190 +1144,190 @@ export const categoryDataNail = {
 }
 
 export const categoryDataMedi = {
-  comedoneextraction: {
-    thumb: comedoneExtraction1,
-    image: comedoneExtraction,
-    title: "Comedone Extraction",
-    desPreview: " There is a grade of acne (Grade 1) which has comedones as the major skin lesions. Comedones can be open or closed.  Both are  basically clogged hair follicles. Open comedones are blocked follicles that are open and appear as black dots (black heads ) whereas closed comedones look like tiny bumps or surface irregularities commonly seen around the mouth and chin",
-    qanda: [
-      {
-        quest: "Comedone extraction and acne - injections ",
-        ans: "There is a grade of acne (Grade 1) which has comedones as the major skin lesions. Comedones can be open or closed.  Both are  basically clogged hair follicles. Open comedones are blocked follicles that are open and appear as black dots (black heads ) whereas closed comedones look like tiny bumps or surface irregularities commonly seen around the mouth and chin. The comedones respond only to certain medications such as benzoyl peroxide and retinoic acid. At times they are best removed manually with the help of comedone extractor or chemical peeling. Grade 4 acne characterised by cysts and nodules are the severe form of acne  and the most resistant to treatment. In those patients treatment can be given by local delivery of medicines with the help of injections or simple removal of contents of cyst by aspiration. This goes a long way in reducing scar formation. Scars are more difficult to treat than the acne itself."
-      }
-    ]
-  },
-  biopsies: {
-    thumb: biopsies1,
-    image: biopsies,
-    title: "Biopsies",
-    desPreview: "The diagnosis of skin conditions are by and large  made by direct examination by the physician with the help of simple tools such as a torch, magnifying glass or a dermascope. The sophistication of laborious tests and imaging is not available or unhelpful to a dermatologist. Considering the diverse",
-    qanda: [
-      {
-        quest: "",
-        ans: "The diagnosis of skin conditions are by and large  made by direct examination by the physician with the help of simple tools such as a torch, magnifying glass or a dermascope. The sophistication of laborious tests and imaging is not available or unhelpful to a dermatologist. Considering the diverse conditions affecting the skin,in circumstances where the diagnosis is not evident,  biopsy of the lesional skin comes to rescue. Most skin biopsies are simple office procedures done under local anesthesia. Many of them are done without a need for suturing and no subsequent scarring. The specimen will be examined by a pathologist and the dermatologist and reports issued that will help with the diagnosis and further management. "
-      }
-    ]
-  },
-  procedureforingrowntoenails: {
-    thumb: ingrowingToeNail1,
-    image: ingrowingToeNail,
-    title: "Procedure for Ingrown Toe Nails",
-    desPreview: "Ingrown toenails causing pain on the site of impingement can be treated conservatively with ointments, soaking the foot under lukewarm water and proper cutting of nails. When all the above measures fail, there is a need to remove the nail either in toto or the affected half. This procedure is done under local anesthesia and the impinged nail is detached",
-    qanda: [
-      {
-        quest: "",
-        ans: "Ingrown toenails causing pain on the site of impingement can be treated conservatively with ointments, soaking the foot under lukewarm water and proper cutting of nails. When all the above measures fail, there is a need to remove the nail either in toto or the affected half. This procedure is done under local anesthesia and the impinged nail is detached from the base and then cut. The regrowing nail is then observed for proper growth. In case of repeated ingrowing a permanent removal of the nail is advised. This is done by removing the nail and the matrix (from which the nail grows) chemically treated so that it gets destroyed with no further nail growth."
-      }
-    ]
-  },
-  keloids: {
-    thumb: keloids1,
-    image: keloids,
-    title: "keloids",
-    desPreview: "Keloids and hypertrophic scars are excessive scar tissue formed either spontaneously or following trauma. The one tempting treatment option that is best avoided in the majority of cases is excision or removal of the scar surgically. Most individuals with this condition have this innate tendency to scar which is why removal of the scar ",
-    qanda: [
-      {
-        quest: "Injection for thick scars and keloids",
-        ans: "Keloids and hypertrophic scars are excessive scar tissue formed either spontaneously or following trauma. The one tempting treatment option that is best avoided in the majority of cases is excision or removal of the scar surgically. Most individuals with this condition have this innate tendency to scar which is why removal of the scar (another injury) results in a bigger scar in the majority of cases.This is best avoided unless the bulk of the scar is huge such as the large ear lobe keloid.This will require debulking. So this condition is best treated by medications delivered to the site of scar with injections. These medications act by lysing the excess scar collagen  or underlying fibrosis. This  is also done under local anesthesia without much discomfort to the patient."
-      }
-    ]
-  },
-  scartreatment: {
-    thumb: scarTreatment1,
-    image: scarTreatment,
-    title: "Scar Treatment",
-    desPreview: "	Scar is the sequelae of injury and  healing that occurs with fibrosis of the skin and the dermis underneath. It can result from physical trauma or by many other skin conditions such as acne, furuncles, burns, scald injury, spontaneous keloids etc. Some people tend to scar more than others for the ",
-    qanda: [
-      {
-        quest: "",
-        ans: "Scar is the sequelae of injury and  healing that occurs with fibrosis of the skin and the dermis underneath. It can result from physical trauma or by many other skin conditions such as acne, furuncles, burns, scald injury, spontaneous keloids etc. Some people tend to scar more than others for the same degree of injury due to their innate tendencies (genetic susceptibility). Scars can be depressed scars (atrophic) or raised scars (hypertrophic). Most of the scars are only of cosmetic concern. Few such as keloids and hypertrophic scars are itchy and bothersome.Scars that cross joints can cause contractures. Scars continue to undergo changes(like thinning out) for many years after the occurrence of the insult or injury, but never disappear. The collagen underneath is fibrosed and becomes inactive."
-      },
-      {
-        quest: "Can they be prevented  ?",
-        ans: "For those who tend to scar more than others, there are silicone based ointments and local steroid injections which can prevent or reduce the scarring when used early in the healing process  (within 2-4 weeks of injury)."
-      },
-      {
-        quest: "Can they be treated  ?",
-        ans: "For those with established scars, there are different modalities of treatment depending on  the nature and age of the scar. First modalities aims at controlled reinjury of the affected skin in order to kindle tissue response and collagen regeneration.These include topical application of  certain chemicals, microneedling, microneedling with radiofrequency etc.All of these procedures are carried out in a painless manner under local anaesthetia applied onto the skin (numbing creams) Second modality - Raised scars with thick hypertrophic collagen bundles in dermis need to be thinned out with the help of injectables that lyse the unwanted collagen."
-      }
-    ]
-  },
-  cornwarttreatment: {
-    thumb: Cornwarttreatment1,
-    image: Cornwarttreatment,
-    title: "Corn, Wart Treatment ",
-    desPreview: "Corn,wart treatment ",
-    qanda: [
-      {
-        quest: "Do I Have Corns or Warts? How Severe Are They? ",
-        ans: "If you've noticed abnormal growths on your skin, particularly on the feet or hands, you might be dealing with corns or warts. Corns are often painful, thickened areas of skin caused by friction or pressure, while warts are small, rough growths caused by a viral infection. They can vary in color, from white and skin-colored to black. Understanding their appearance, distribution, and responsiveness to home remedies is crucial in determining the severity of the condition."
-      },
-      {
-        quest: "Should I Consider Treating Corns and Warts? Why? ",
-        ans: "While corns and warts are primarily considered cosmetic concerns, their treatment is advisable to prevent long-term discomfort and complications. Untreated corns can lead to increased pain and difficulty walking, while warts can spread and cause discomfort. Additionally, identifying the root cause, such as viral infections or persistent friction, is essential for effective treatment."
-      },
-      {
-        quest: "When Will My Corns and Warts Disappear? How Long Should I Undergo Treatment?",
-        ans: "The resolution of corns and warts varies based on the individual's response to treatment and the underlying causes. Corns and warts may persist for years if left untreated, impacting one's daily life. Treatment plans may include topical applications, medicated pads, and in some cases, minor surgical procedures. Understanding the factors influencing their persistence is key to developing a personalized treatment timeline."
-      },
+//   comedoneextraction: {
+//     thumb: comedoneExtraction1,
+//     image: comedoneExtraction,
+//     title: "Comedone Extraction",
+//     desPreview: " There is a grade of acne (Grade 1) which has comedones as the major skin lesions. Comedones can be open or closed.  Both are  basically clogged hair follicles. Open comedones are blocked follicles that are open and appear as black dots (black heads ) whereas closed comedones look like tiny bumps or surface irregularities commonly seen around the mouth and chin",
+//     qanda: [
+//       {
+//         quest: "Comedone extraction and acne - injections ",
+//         ans: "There is a grade of acne (Grade 1) which has comedones as the major skin lesions. Comedones can be open or closed.  Both are  basically clogged hair follicles. Open comedones are blocked follicles that are open and appear as black dots (black heads ) whereas closed comedones look like tiny bumps or surface irregularities commonly seen around the mouth and chin. The comedones respond only to certain medications such as benzoyl peroxide and retinoic acid. At times they are best removed manually with the help of comedone extractor or chemical peeling. Grade 4 acne characterised by cysts and nodules are the severe form of acne  and the most resistant to treatment. In those patients treatment can be given by local delivery of medicines with the help of injections or simple removal of contents of cyst by aspiration. This goes a long way in reducing scar formation. Scars are more difficult to treat than the acne itself."
+//       }
+//     ]
+//   },
+//   biopsies: {
+//     thumb: biopsies1,
+//     image: biopsies,
+//     title: "Biopsies",
+//     desPreview: "The diagnosis of skin conditions are by and large  made by direct examination by the physician with the help of simple tools such as a torch, magnifying glass or a dermascope. The sophistication of laborious tests and imaging is not available or unhelpful to a dermatologist. Considering the diverse",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "The diagnosis of skin conditions are by and large  made by direct examination by the physician with the help of simple tools such as a torch, magnifying glass or a dermascope. The sophistication of laborious tests and imaging is not available or unhelpful to a dermatologist. Considering the diverse conditions affecting the skin,in circumstances where the diagnosis is not evident,  biopsy of the lesional skin comes to rescue. Most skin biopsies are simple office procedures done under local anesthesia. Many of them are done without a need for suturing and no subsequent scarring. The specimen will be examined by a pathologist and the dermatologist and reports issued that will help with the diagnosis and further management. "
+//       }
+//     ]
+//   },
+//   procedureforingrowntoenails: {
+//     thumb: ingrowingToeNail1,
+//     image: ingrowingToeNail,
+//     title: "Procedure for Ingrown Toe Nails",
+//     desPreview: "Ingrown toenails causing pain on the site of impingement can be treated conservatively with ointments, soaking the foot under lukewarm water and proper cutting of nails. When all the above measures fail, there is a need to remove the nail either in toto or the affected half. This procedure is done under local anesthesia and the impinged nail is detached",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "Ingrown toenails causing pain on the site of impingement can be treated conservatively with ointments, soaking the foot under lukewarm water and proper cutting of nails. When all the above measures fail, there is a need to remove the nail either in toto or the affected half. This procedure is done under local anesthesia and the impinged nail is detached from the base and then cut. The regrowing nail is then observed for proper growth. In case of repeated ingrowing a permanent removal of the nail is advised. This is done by removing the nail and the matrix (from which the nail grows) chemically treated so that it gets destroyed with no further nail growth."
+//       }
+//     ]
+//   },
+//   keloids: {
+//     thumb: keloids1,
+//     image: keloids,
+//     title: "keloids",
+//     desPreview: "Keloids and hypertrophic scars are excessive scar tissue formed either spontaneously or following trauma. The one tempting treatment option that is best avoided in the majority of cases is excision or removal of the scar surgically. Most individuals with this condition have this innate tendency to scar which is why removal of the scar ",
+//     qanda: [
+//       {
+//         quest: "Injection for thick scars and keloids",
+//         ans: "Keloids and hypertrophic scars are excessive scar tissue formed either spontaneously or following trauma. The one tempting treatment option that is best avoided in the majority of cases is excision or removal of the scar surgically. Most individuals with this condition have this innate tendency to scar which is why removal of the scar (another injury) results in a bigger scar in the majority of cases.This is best avoided unless the bulk of the scar is huge such as the large ear lobe keloid.This will require debulking. So this condition is best treated by medications delivered to the site of scar with injections. These medications act by lysing the excess scar collagen  or underlying fibrosis. This  is also done under local anesthesia without much discomfort to the patient."
+//       }
+//     ]
+//   },
+//   scartreatment: {
+//     thumb: scarTreatment1,
+//     image: scarTreatment,
+//     title: "Scar Treatment",
+//     desPreview: "	Scar is the sequelae of injury and  healing that occurs with fibrosis of the skin and the dermis underneath. It can result from physical trauma or by many other skin conditions such as acne, furuncles, burns, scald injury, spontaneous keloids etc. Some people tend to scar more than others for the ",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "Scar is the sequelae of injury and  healing that occurs with fibrosis of the skin and the dermis underneath. It can result from physical trauma or by many other skin conditions such as acne, furuncles, burns, scald injury, spontaneous keloids etc. Some people tend to scar more than others for the same degree of injury due to their innate tendencies (genetic susceptibility). Scars can be depressed scars (atrophic) or raised scars (hypertrophic). Most of the scars are only of cosmetic concern. Few such as keloids and hypertrophic scars are itchy and bothersome.Scars that cross joints can cause contractures. Scars continue to undergo changes(like thinning out) for many years after the occurrence of the insult or injury, but never disappear. The collagen underneath is fibrosed and becomes inactive."
+//       },
+//       {
+//         quest: "Can they be prevented  ?",
+//         ans: "For those who tend to scar more than others, there are silicone based ointments and local steroid injections which can prevent or reduce the scarring when used early in the healing process  (within 2-4 weeks of injury)."
+//       },
+//       {
+//         quest: "Can they be treated  ?",
+//         ans: "For those with established scars, there are different modalities of treatment depending on  the nature and age of the scar. First modalities aims at controlled reinjury of the affected skin in order to kindle tissue response and collagen regeneration.These include topical application of  certain chemicals, microneedling, microneedling with radiofrequency etc.All of these procedures are carried out in a painless manner under local anaesthetia applied onto the skin (numbing creams) Second modality - Raised scars with thick hypertrophic collagen bundles in dermis need to be thinned out with the help of injectables that lyse the unwanted collagen."
+//       }
+//     ]
+//   },
+//   cornwarttreatment: {
+//     thumb: Cornwarttreatment1,
+//     image: Cornwarttreatment,
+//     title: "Corn, Wart Treatment ",
+//     desPreview: "Corn,wart treatment ",
+//     qanda: [
+//       {
+//         quest: "Do I Have Corns or Warts? How Severe Are They? ",
+//         ans: "If you've noticed abnormal growths on your skin, particularly on the feet or hands, you might be dealing with corns or warts. Corns are often painful, thickened areas of skin caused by friction or pressure, while warts are small, rough growths caused by a viral infection. They can vary in color, from white and skin-colored to black. Understanding their appearance, distribution, and responsiveness to home remedies is crucial in determining the severity of the condition."
+//       },
+//       {
+//         quest: "Should I Consider Treating Corns and Warts? Why? ",
+//         ans: "While corns and warts are primarily considered cosmetic concerns, their treatment is advisable to prevent long-term discomfort and complications. Untreated corns can lead to increased pain and difficulty walking, while warts can spread and cause discomfort. Additionally, identifying the root cause, such as viral infections or persistent friction, is essential for effective treatment."
+//       },
+//       {
+//         quest: "When Will My Corns and Warts Disappear? How Long Should I Undergo Treatment?",
+//         ans: "The resolution of corns and warts varies based on the individual's response to treatment and the underlying causes. Corns and warts may persist for years if left untreated, impacting one's daily life. Treatment plans may include topical applications, medicated pads, and in some cases, minor surgical procedures. Understanding the factors influencing their persistence is key to developing a personalized treatment timeline."
+//       },
       
-    ]
-  },
-  lipomaremoval: {
-    thumb: Lipomaremoval1,
-    image: Lipomaremoval,
-    title: "Lipoma Removal",
-    desPreview: "Lipoma removal",
-    qanda: [
-      {
-        quest: "Lipoma removal",
-        ans: [`Lipoma or fat swellings are seen on the subcutaneous or the fat layer of the skin. They gradually grow in size. They are either visible on the outside as a lump or felt when touched. In most patients, they don't trouble the individual and are merely a cosmetic concern. In others, it may reach a considerable size causing impedance in function or impinge on a nerve or other structures causing discomfort. They can be single or multiple in numbers. `,
-              `Lipoma resection is done as an op procedure under local anaesthesia. The incision is small as the fat tissue can be squeezed out through a tiny hole. This leaves a very small post surgical scar that becomes imperceptible in a few weeks. There is minimum post procedure pain , managed with pain killers for just 2-3 days.
-              `]
-      }
-    ]
-  },
-  vitiligosurgeries : {
-    thumb: Vitiligosurgeries1,
-    image: Vitiligosurgeries,
-    title: "Vitiligo Surgeries ",
-    desPreview: "Vitiligo surgeries ",
-    qanda: [
-      {
-        quest: "Vitiligo surgeries ",
-        ans: "Vitiligo, a skin condition characterized by the loss of pigmentation, can significantly impact one's appearance and self-esteem. While various treatments exist, surgical interventions have gained prominence in recent years. This article delves into the different surgical options available for vitiligo, offering insights into their processes, effectiveness, and considerations."
-      },
-      {
-        quest:"Understanding Vitiligo",
-        ans:"Before exploring surgical treatments, it's essential to understand vitiligo itself. This autoimmune condition causes the destruction of melanocytes, leading to depigmentation and the development of white patches on the skin. While non-surgical treatments like topical steroids and phototherapy exist, surgical options become relevant for stable cases."
-      },
-      {
-        quest:"1. Skin Grafting:",
-        ans:"Skin grafting is a common surgical technique for treating vitiligo. It involves taking a small piece of normally pigmented skin (usually from the patient's thigh or buttocks) and transplanting it to the depigmented area. This procedure aims to reintroduce melanocytes and restore pigmentation."
-      },
-      {
-        quest:"2. Melanocyte Transplantation:",
-        ans:"In this advanced procedure, melanocytes are harvested from a small section of normally pigmented skin and then transplanted onto the depigmented areas. This precise method is particularly effective for smaller patches and offers a more natural pigmentation result."
-      },
-      {
-        quest:"3. Microskin Grafting:",
-        ans:"Microskin grafting involves using very small pieces of pigmented skin, allowing for a more targeted and controlled application. This technique is advantageous for treating specific, localized areas of vitiligo with precision."
-      },
-      {
-        quest:"4. Non-Cultured Epidermal Suspension Transplantation:",
-        ans:"This procedure involves taking a thin layer of the patient's skin, separating the epidermis, and creating a suspension that is then applied to the depigmented areas. It is a relatively simple and effective method for treating vitiligo."
-      },
-      {
-        quest:"Post-Surgery Care and Recovery:",
-        ans:"Patients undergoing vitiligo surgeries should follow a post-surgery care regimen as advised by their dermatologist. This may include avoiding sun exposure, using prescribed medications, and attending follow-up appointments to monitor progress."
-      },
-      {
-        quest:"Conclusion:",
-        ans:"Vitiligo surgeries represent a viable option for individuals seeking a more permanent solution to depigmentation. As with any medical procedure, it's crucial to consult with a qualified dermatologist to determine the most suitable approach based on individual factors. While surgical interventions can offer significant improvements, ongoing research continues to explore new and enhanced techniques for treating vitiligo."
-      },
-    ]
-  },
-  earloberepair : {
-    thumb: Earloberepair1,
-    image: Earloberepair,
-    title: "Ear Lobe Repair ",
-    desPreview: "Ear lobe repair  ",
-    qanda: [
-      {
-        quest: "Ear lobe repair ",
-        ans: "The earlobes, often overlooked but significant features of our appearance, can face wear and tear over time. Whether due to heavy earrings, accidents, or simple aging, damaged or stretched earlobes can impact self-esteem. Fortunately, ear lobe repair procedures offer a solution to restore the natural beauty of this delicate part of the ear. "
-      },
-      {
-        quest:"Understanding the Need for Ear Lobe Repair:",
-        ans:"Many factors can contribute to the need for ear lobe repair. Prolonged use of heavy earrings, accidental tears, or the natural aging process can result in elongated or torn earlobes. For those experiencing dissatisfaction with their earlobes, repair procedures can provide a simple yet effective solution."
-      },
-      {
-        quest:"The Procedure: A Closer Look:",
-        ans:"Ear lobe repair is a minor surgical procedure typically performed under local anesthesia. The surgeon carefully trims away any excess tissue, reshapes the lobe, and then meticulously stitches the edges together. The goal is to create a natural-looking contour while addressing any tears or elongation."
-      },
-      {
-        quest:"Who Can Benefit from Ear Lobe Repair?",
-        ans:"Anyone with elongated or torn earlobes, whether due to trauma or prolonged use of heavy earrings, can benefit from ear lobe repair. The procedure is versatile and customizable to each individual's unique needs, providing a tailored solution for aesthetic concerns."
-      },
-      {
-        quest:"Recovery and Aftercare:",
-        ans:"One of the advantages of ear lobe repair is its minimal downtime. Patients can usually return to their normal activities shortly after the procedure. The surgeon will provide specific postoperative care instructions, which may include avoiding heavy earrings for a certain period and keeping the area clean to promote optimal healing."
-      },
-      {
-        quest:"Addressing Earring-Related Concerns:",
-        ans:"For those who love accessorizing with earrings, concerns about future damage may arise. Surgeons often advise patients on proper earring selection and the importance of avoiding excessive weight, helping to prevent future issues and maintain the results of the repair.",
+//     ]
+//   },
+//   lipomaremoval: {
+//     thumb: Lipomaremoval1,
+//     image: Lipomaremoval,
+//     title: "Lipoma Removal",
+//     desPreview: "Lipoma removal",
+//     qanda: [
+//       {
+//         quest: "Lipoma removal",
+//         ans: [`Lipoma or fat swellings are seen on the subcutaneous or the fat layer of the skin. They gradually grow in size. They are either visible on the outside as a lump or felt when touched. In most patients, they don't trouble the individual and are merely a cosmetic concern. In others, it may reach a considerable size causing impedance in function or impinge on a nerve or other structures causing discomfort. They can be single or multiple in numbers. `,
+//               `Lipoma resection is done as an op procedure under local anaesthesia. The incision is small as the fat tissue can be squeezed out through a tiny hole. This leaves a very small post surgical scar that becomes imperceptible in a few weeks. There is minimum post procedure pain , managed with pain killers for just 2-3 days.
+//               `]
+//       }
+//     ]
+//   },
+//   vitiligosurgeries : {
+//     thumb: Vitiligosurgeries1,
+//     image: Vitiligosurgeries,
+//     title: "Vitiligo Surgeries ",
+//     desPreview: "Vitiligo surgeries ",
+//     qanda: [
+//       {
+//         quest: "Vitiligo surgeries ",
+//         ans: "Vitiligo, a skin condition characterized by the loss of pigmentation, can significantly impact one's appearance and self-esteem. While various treatments exist, surgical interventions have gained prominence in recent years. This article delves into the different surgical options available for vitiligo, offering insights into their processes, effectiveness, and considerations."
+//       },
+//       {
+//         quest:"Understanding Vitiligo",
+//         ans:"Before exploring surgical treatments, it's essential to understand vitiligo itself. This autoimmune condition causes the destruction of melanocytes, leading to depigmentation and the development of white patches on the skin. While non-surgical treatments like topical steroids and phototherapy exist, surgical options become relevant for stable cases."
+//       },
+//       {
+//         quest:"1. Skin Grafting:",
+//         ans:"Skin grafting is a common surgical technique for treating vitiligo. It involves taking a small piece of normally pigmented skin (usually from the patient's thigh or buttocks) and transplanting it to the depigmented area. This procedure aims to reintroduce melanocytes and restore pigmentation."
+//       },
+//       {
+//         quest:"2. Melanocyte Transplantation:",
+//         ans:"In this advanced procedure, melanocytes are harvested from a small section of normally pigmented skin and then transplanted onto the depigmented areas. This precise method is particularly effective for smaller patches and offers a more natural pigmentation result."
+//       },
+//       {
+//         quest:"3. Microskin Grafting:",
+//         ans:"Microskin grafting involves using very small pieces of pigmented skin, allowing for a more targeted and controlled application. This technique is advantageous for treating specific, localized areas of vitiligo with precision."
+//       },
+//       {
+//         quest:"4. Non-Cultured Epidermal Suspension Transplantation:",
+//         ans:"This procedure involves taking a thin layer of the patient's skin, separating the epidermis, and creating a suspension that is then applied to the depigmented areas. It is a relatively simple and effective method for treating vitiligo."
+//       },
+//       {
+//         quest:"Post-Surgery Care and Recovery:",
+//         ans:"Patients undergoing vitiligo surgeries should follow a post-surgery care regimen as advised by their dermatologist. This may include avoiding sun exposure, using prescribed medications, and attending follow-up appointments to monitor progress."
+//       },
+//       {
+//         quest:"Conclusion:",
+//         ans:"Vitiligo surgeries represent a viable option for individuals seeking a more permanent solution to depigmentation. As with any medical procedure, it's crucial to consult with a qualified dermatologist to determine the most suitable approach based on individual factors. While surgical interventions can offer significant improvements, ongoing research continues to explore new and enhanced techniques for treating vitiligo."
+//       },
+//     ]
+//   },
+//   earloberepair : {
+//     thumb: Earloberepair1,
+//     image: Earloberepair,
+//     title: "Ear Lobe Repair ",
+//     desPreview: "Ear lobe repair  ",
+//     qanda: [
+//       {
+//         quest: "Ear lobe repair ",
+//         ans: "The earlobes, often overlooked but significant features of our appearance, can face wear and tear over time. Whether due to heavy earrings, accidents, or simple aging, damaged or stretched earlobes can impact self-esteem. Fortunately, ear lobe repair procedures offer a solution to restore the natural beauty of this delicate part of the ear. "
+//       },
+//       {
+//         quest:"Understanding the Need for Ear Lobe Repair:",
+//         ans:"Many factors can contribute to the need for ear lobe repair. Prolonged use of heavy earrings, accidental tears, or the natural aging process can result in elongated or torn earlobes. For those experiencing dissatisfaction with their earlobes, repair procedures can provide a simple yet effective solution."
+//       },
+//       {
+//         quest:"The Procedure: A Closer Look:",
+//         ans:"Ear lobe repair is a minor surgical procedure typically performed under local anesthesia. The surgeon carefully trims away any excess tissue, reshapes the lobe, and then meticulously stitches the edges together. The goal is to create a natural-looking contour while addressing any tears or elongation."
+//       },
+//       {
+//         quest:"Who Can Benefit from Ear Lobe Repair?",
+//         ans:"Anyone with elongated or torn earlobes, whether due to trauma or prolonged use of heavy earrings, can benefit from ear lobe repair. The procedure is versatile and customizable to each individual's unique needs, providing a tailored solution for aesthetic concerns."
+//       },
+//       {
+//         quest:"Recovery and Aftercare:",
+//         ans:"One of the advantages of ear lobe repair is its minimal downtime. Patients can usually return to their normal activities shortly after the procedure. The surgeon will provide specific postoperative care instructions, which may include avoiding heavy earrings for a certain period and keeping the area clean to promote optimal healing."
+//       },
+//       {
+//         quest:"Addressing Earring-Related Concerns:",
+//         ans:"For those who love accessorizing with earrings, concerns about future damage may arise. Surgeons often advise patients on proper earring selection and the importance of avoiding excessive weight, helping to prevent future issues and maintain the results of the repair.",
 
-      },
-      {
-        quest:"Boosting Self-Confidence:",
-        ans:"Beyond the physical restoration, ear lobe repair can have a profound impact on an individual's self-confidence. Feeling comfortable and satisfied with one's appearance, even in seemingly small details like the earlobes, can contribute to an overall sense of well-being and self-assurance."
-      },
-      {
-        quest:"conclusion",
-        ans:"Ear lobe repair is a straightforward yet impactful procedure that addresses common aesthetic concerns related to the earlobes. For those seeking to restore the natural beauty of their earlobes and regain confidence in their appearance, this minor surgical intervention offers a reliable and effective solution. If you're considering ear lobe repair, consult with a qualified professional to discuss your unique needs and explore the possibilities for rejuvenating your earlobes."
-      }
-    ]
-  },
+//       },
+//       {
+//         quest:"Boosting Self-Confidence:",
+//         ans:"Beyond the physical restoration, ear lobe repair can have a profound impact on an individual's self-confidence. Feeling comfortable and satisfied with one's appearance, even in seemingly small details like the earlobes, can contribute to an overall sense of well-being and self-assurance."
+//       },
+//       {
+//         quest:"conclusion",
+//         ans:"Ear lobe repair is a straightforward yet impactful procedure that addresses common aesthetic concerns related to the earlobes. For those seeking to restore the natural beauty of their earlobes and regain confidence in their appearance, this minor surgical intervention offers a reliable and effective solution. If you're considering ear lobe repair, consult with a qualified professional to discuss your unique needs and explore the possibilities for rejuvenating your earlobes."
+//       }
+//     ]
+//   },
   
 
 }
