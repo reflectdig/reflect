@@ -118,11 +118,11 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
                   Aesthetic Procedure
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a aria-label="Go to Medical Procedure" href={"/medicalprocedure"}>
                   Medical Procedure
                   </a>
-                </li>
+                </li> */}
                 
               </ul>
             </li>

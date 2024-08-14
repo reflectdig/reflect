@@ -3,6 +3,7 @@ import logo from "../assets/images/logo/logo2.webp";
 import MobileMenu from "./MobileMenu";
 import CanonicalUrl from "../HelmetWrapper"
 import ReactGA from "react-ga4";
+import { Helmet } from "react-helmet";
 
 const Header = () => {
     const [activeMobileMenu, setActiveMobileMenu] = useState(false);
@@ -11,22 +12,44 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener("scroll", () => {
             let windowScroll = window.scrollY > 100;
-            scrollNav.current.classList.toggle("rt-sticky-active", windowScroll);
-            scrollNav.current.classList.toggle("sticky", windowScroll);
+            scrollNav?.current?.classList?.toggle("rt-sticky-active", windowScroll);
+            scrollNav?.current?.classList?.toggle("sticky", windowScroll);
         });
     }, []);
 
     useEffect(() => {
 
-        ReactGA.initialize("your GA measurement id");
+        ReactGA.initialize("G-6596QN3CT8");
 
-        ReactGA.send({ hitType: "pageview", page: window.location.pathname});
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+        
+        ReactGA.initialize("AW-16650148708");
+
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
     }, [])
 
+    const injectGA = () => {
+        if (typeof window == 'undefined') {
+            return;
+        }
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            window.dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'YOUR_TRACKING_ID');
+    };
 
     return (
         <>
+            <Helmet>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16650148708"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-6596QN3CT8"></script>
+
+                <script>{injectGA()}</script>
+            </Helmet>
             <head>
                 <meta name="google-site-verification" content="0NcXIkaakpGwXOdq2K4A0FOy0-vGXhzJqMH6ENq4kzk" />
             </head>

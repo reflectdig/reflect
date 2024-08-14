@@ -19,14 +19,14 @@ const HomeTwoHeader = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let windowScroll = window.scrollY > 100;
-      scrollNav.current.classList.toggle("rt-sticky-active", windowScroll);
+      scrollNav?.current?.classList?.toggle("rt-sticky-active", windowScroll);
     });
   }, []);
   showSearchBar
-    ? body.classList.add("modal-open")
-    : body.classList.remove("modal-open");
+    ? body?.classList?.add("modal-open")
+    : body?.classList?.remove("modal-open");
 
-  body.classList.contains("modal-open")
+  body?.classList?.contains("modal-open")
     ? (document.documentElement.scrollTop = 0)
     : "";
   return (

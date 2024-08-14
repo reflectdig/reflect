@@ -757,34 +757,34 @@ export const categoryData = {
 
 
 export const categoryDataAest = { 
-  chemicalpeeling: {
-    thumb: chemicalPeeling1,
-    image: chemicalPeeling,
-    title: "Chemical Peeling",
-    desPreview: "We all have heard the story as how a Cleopatra bathed in milk.(Donkey’s milk ;) ) Any idea how I could have helped? It is the lactic acid present in it which has had an exfoliating effect on the skin ! But we are not planning on doing anything even remotely close to that! And we also use citrus and other fruits on the face to improve skin texture. So",
-    qanda: [
-      {
-        quest: "",
-        ans: "We all have heard the story as how a Cleopatra bathed in milk.(Donkey’s milk ;) ) Any idea how I could have helped? It is the lactic acid present in it which has had an exfoliating effect on the skin ! But we are not planning on doing anything even remotely close to that! And we also use citrus and other fruits on the face to improve skin texture. So chemical peeling derives its roots from such practises. It is a technique of using such acids in a tolerable higher concentration to achieve desirable results. ",
-      },
-      {
-        quest: "What are the conditions chemical peeling is used best!",
-        ans: "Acne Do all acne be treated with chemical peels? When to treat  acne with chemical peeling? All grades of acne can be treated with both creams and chemical peeling. Peeling is advised when a quicker response is desired, in situations where oral drugs and certain topical medications are not advisable such as pregnancy and lactation, Pigmentation, Pigmenations post acne, generalised tanning, resistant pigmentations not responding to topical medications, melasma etc, fine wrinkles correction and rejuvenation, keratosis pilaris, pigmentation around the eyes."
-      },
-      {
-        quest: "What is the downtime?",
-        ans: "	Downtime depends on the peel chosen. Very superficial peels or superficial peels have no downtime. Work can be resumed even the very next day. Medium depth peels can take a few days for the skin to settle down and peeling will continue to occur for a week or so. "
-      },
-      {
-        quest: "What are the adverse effects ?",
-        ans: "	The modern day peels are very safe to use. In most of the cases complications arise from poor post procedural care. The most important advice is to apply sunscreens and to use a non harsh face cleanser.Any harsh cosmetics is to be avoided for a week. The skin should be allowed to peel by itself and should not be meddled with. "
-      },
-      {
-        quest: "How  long will the effects last?",
-        ans: "For best results, a minimum of 4-6 sessions at the interval of 10 days to 3 weeks depending upon the indication is recommended. For any treatment results to sustain, post procedural maintenance is required. With proper maintenance, results last for 6 months to 1 year after which maintenance sessions can be done once in 3 months or so, depending on the indication."
-      }
-    ]
-  },
+//   chemicalpeeling: {
+//     thumb: chemicalPeeling1,
+//     image: chemicalPeeling,
+//     title: "Chemical Peeling",
+//     desPreview: "We all have heard the story as how a Cleopatra bathed in milk.(Donkey’s milk ;) ) Any idea how I could have helped? It is the lactic acid present in it which has had an exfoliating effect on the skin ! But we are not planning on doing anything even remotely close to that! And we also use citrus and other fruits on the face to improve skin texture. So",
+//     qanda: [
+//       {
+//         quest: "",
+//         ans: "We all have heard the story as how a Cleopatra bathed in milk.(Donkey’s milk ;) ) Any idea how I could have helped? It is the lactic acid present in it which has had an exfoliating effect on the skin ! But we are not planning on doing anything even remotely close to that! And we also use citrus and other fruits on the face to improve skin texture. So chemical peeling derives its roots from such practises. It is a technique of using such acids in a tolerable higher concentration to achieve desirable results. ",
+//       },
+//       {
+//         quest: "What are the conditions chemical peeling is used best!",
+//         ans: "Acne Do all acne be treated with chemical peels? When to treat  acne with chemical peeling? All grades of acne can be treated with both creams and chemical peeling. Peeling is advised when a quicker response is desired, in situations where oral drugs and certain topical medications are not advisable such as pregnancy and lactation, Pigmentation, Pigmenations post acne, generalised tanning, resistant pigmentations not responding to topical medications, melasma etc, fine wrinkles correction and rejuvenation, keratosis pilaris, pigmentation around the eyes."
+//       },
+//       {
+//         quest: "What is the downtime?",
+//         ans: "	Downtime depends on the peel chosen. Very superficial peels or superficial peels have no downtime. Work can be resumed even the very next day. Medium depth peels can take a few days for the skin to settle down and peeling will continue to occur for a week or so. "
+//       },
+//       {
+//         quest: "What are the adverse effects ?",
+//         ans: "	The modern day peels are very safe to use. In most of the cases complications arise from poor post procedural care. The most important advice is to apply sunscreens and to use a non harsh face cleanser.Any harsh cosmetics is to be avoided for a week. The skin should be allowed to peel by itself and should not be meddled with. "
+//       },
+//       {
+//         quest: "How  long will the effects last?",
+//         ans: "For best results, a minimum of 4-6 sessions at the interval of 10 days to 3 weeks depending upon the indication is recommended. For any treatment results to sustain, post procedural maintenance is required. With proper maintenance, results last for 6 months to 1 year after which maintenance sessions can be done once in 3 months or so, depending on the indication."
+//       }
+//     ]
+//   },
 //   laserskintoningandrejuvenation: {
 //     thumb: laserSkinToningAnd1,
 //     image: laserSkinToningAnd,

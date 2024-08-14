@@ -143,7 +143,7 @@ export default function Admin() {
 
     try {
       const querySnapshot = await getDocs(blogPostsCollection);
-      const existingBlogNames = querySnapshot.docs.map((doc) => doc.data().name);
+      const existingBlogNames = querySnapshot.docs.map((doc) => doc.data()?.name);
 
       if (existingBlogNames.includes(name)) {
         setBlogNameError("A blog with this name already exists.");
@@ -166,7 +166,7 @@ export default function Admin() {
       return;
     }
 
-    const imageRef = ref(storage, `blogs/${BlogImageUpload.name + uuidv4()}`);
+    const imageRef = ref(storage, `blogs/${BlogImageUpload?.name + uuidv4()}`);
     try {
       const snapshot = await uploadBytes(imageRef, BlogImageUpload);
       const url = await getDownloadURL(snapshot.ref);
@@ -327,7 +327,7 @@ export default function Admin() {
   };
 
   const uploadImage = async (Image) => {
-    const imageRef = ref(storage, `images/${Image.name}`);
+    const imageRef = ref(storage, `images/${Image?.name}`);
     await uploadBytes(imageRef, Image);
 
     // Get the download URL for the image
@@ -526,7 +526,7 @@ export default function Admin() {
         {filteredDocuments.length > 0 ? filteredDocuments.map((data) => (
           
                 <div className="book-card" key={data.id}>
-                    <div><strong>Name:</strong> {data.name}</div>
+                    <div><strong>Name:</strong> {data?.name}</div>
                     <div> <strong>Phone Number:</strong> {data.phoneNumber} </div>
                     <div><strong>Time Slot:</strong> {data.timeSlot}</div>
                     <div> <strong>Submission time:</strong> {data.timestamp && data.timestamp.toDate().toString()}</div>

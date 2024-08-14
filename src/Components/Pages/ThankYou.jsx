@@ -1,14 +1,13 @@
 import React from "react";
 import { call, mail, map } from "../../constant/images";
-import ContactForm from "../ContactForm";
 import Footer from "../Footer";
 import Header from "../Header";
 import PageBanner from "../PageBanner";
 import contact from "../../assets/images/banner/contact.webp";
-import HelmetWrapper from "../../HelmetWrapper";
+import HelmetWrapper from '../../HelmetWrapper';
+import ThankYouBlock from '../ThankYouBlock';
 
-const ContactUs = () => {
-
+const ThankYou = () => {
     return (
         <>
             <Header />
@@ -20,6 +19,11 @@ const ContactUs = () => {
             <div className="nav-tab-wrapper tabs  section-padding">
                 <div className="container">
                     <div className=" grid grid-cols-12 gap-[30px]">
+                        <div className="xl:col-span-7 lg:col-span-6 col-span-12">
+                            <div className="bg-white shadow-box7 p-8 rounded-md">
+                                <ThankYouBlock />
+                            </div>
+                        </div>
                         <div className="xl:col-span-5 lg:col-span-6 col-span-12 ">
                             <h1 className="mini-title">Contact Us</h1>
                             <h2 className="column-title ">
@@ -61,11 +65,6 @@ const ContactUs = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="xl:col-span-7 lg:col-span-6 col-span-12">
-                            <div className="bg-white shadow-box7 p-8 rounded-md">
-                                <ContactForm />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -74,4 +73,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default ThankYou;
