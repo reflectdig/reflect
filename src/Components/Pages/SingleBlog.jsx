@@ -4,13 +4,13 @@ import Footer from "../Footer";
 import Header from "../Header";
 
 const SingleBlog = () => {
-  return (
-    <>
-      <Header />
-      <BlogPost />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <BlogPost />
+            <Footer />
+        </>
+    );
 };
 
 export default SingleBlog;
