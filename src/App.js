@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useState, lazy, Suspense } from 'react';
 import { GlobalStateProvider } from "./Components/State/GlobalState";
 import Loading from "./Components/Loading";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const HomeOne = lazy(() => import("./Components/Home/HomeOne"));
 const ErrorPage = lazy(() => import("./Components/Pages/404Page"));
@@ -23,6 +24,8 @@ const Admin = lazy(() => import("./Admin/Admin"));
 const AdminLogin = lazy(() => import("./Admin/Login"));
 
 function App() {
+
+
     // Retrieve the JSON string from localStorage
     const storedTokenString = localStorage.getItem('token');
 
@@ -48,6 +51,17 @@ function App() {
             <Suspense fallback={<Loading />}>
                 <BrowserRouter>
                     <div className="font-gilroy font-medium text-gray text-lg leading-[27px]">
+                        <FloatingWhatsApp
+                            phoneNumber="+91 99526 31929"
+                            accountName="Reflect Skin & Hair care"
+                            allowEsc
+                            allowClickAway
+                            notification
+                            notificationSound
+                            avatar='/assets/download.png'
+                            statusMessage=''
+                            chatMessage={`Welcome to Reflect Skin & Hair care! 🤝 \n\nHow can we help?`}
+                        />
                         <Routes>
                             <Route path="/" element={<HomeOne />} />
                             <Route path="/skin" element={<Skin />} />

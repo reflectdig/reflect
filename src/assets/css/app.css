@@ -6460,3 +6460,7 @@ ul ul>li.menu-item-has-children:hover>a:after {
         flex: 1 0 100%;
     }
 }
+
+.styles-module_accountName__20AXD {
+    color: green !important;
+}

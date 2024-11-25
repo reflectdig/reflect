@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useGlobalState, closePopup, openPopup } from '../Components/State/GlobalState';
 import {
     Button,
@@ -12,8 +12,17 @@ import { FormControlLabel, FormLabel, Radio, RadioGroup } from '@mui/material';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../config/Firebase';
 import { useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+
+    // ? Initialize 
+    useEffect(() => {
+
+        emailjs.init("7tjy19NJH7pTdpua1")
+
+    })
+
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [timeSlot, setTimeSlot] = useState('10am - 4pm');
@@ -55,16 +64,35 @@ const ContactForm = () => {
         const formDataRef = collection(db, 'formData');
         await addDoc(formDataRef, formData);
 
-        let opitons = {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData)
-        }
+        emailjs.send(
+            "service_sld5om4",
+            "template_wqjnm2a",
+            {
+                name: JSON.stringify(name),
+                phone_number: JSON.stringify(phoneNumber),
+                time_slot: JSON.stringify(timeSlot),
+            }
+        ).then((response) => {
 
-        fetch('https://serveremail-1.onrender.com/reflect/sendemail', opitons)
-            .then((res) => res.json())
-            .then(response => {
-            })
+            console.log('EMAIL SENT SUCCESSFULLY: ', { response })
+
+        }, (err) => {
+
+            console.log('ERROR SENDING EMAIL: ', { err })
+
+        })
+
+        // ! Removed
+        // let opitons = {
+        //     method: 'POST',
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify(formData)
+        // }
+
+        // fetch('https://serveremail-1.onrender.com/reflect/sendemail', opitons)
+        //     .then((res) => res.json())
+        //     .then(response => {
+        //     })
     };
 
     return (

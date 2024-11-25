@@ -2,230 +2,236 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thereflectclinic.com/</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thereflectclinic.com/*</loc>
+    <lastmod>2024-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/skin</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/hair</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/body</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/nail</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/blogs</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/blog/*</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/aestheticprocedure</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/about</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/contact</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/thank-you</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/acne</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/skininfections</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/urticaria</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/skingrowth</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/pigmentation</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/vitiligo</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/psoriasis</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/chroniclegulcers</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/pcos</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/openpores</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/vaginaldischarge</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/dandruff</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/hairloss</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/damagedhair</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/excessivesweating</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/excessivebodyhair</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/nailinfection</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/dystrophy</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/ingrowingToeNail</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/hairRemovalWithLaser</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/wartTreatment</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/microdermabrasion</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/hydrafacial</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/medifacial</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/Acnescarandporetreatments</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://thereflectclinic.com/molesandfreckles</loc>
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://thereflectclinic.com/blog/how-do-i-take-care-of-my-newborns-skin-and-hair</loc>
-    <lastmod>2024-10-07</lastmod>
+    <loc>https://thereflectclinic.com/blog/skin-hair-care-newborns</loc>
+    <lastmod>2024-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>
