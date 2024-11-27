@@ -1,8 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { useState, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense, useEffect } from 'react';
 import { GlobalStateProvider } from "./Components/State/GlobalState";
 import Loading from "./Components/Loading";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Modal from "react-modal";
 
 const HomeOne = lazy(() => import("./Components/Home/HomeOne"));
 const ErrorPage = lazy(() => import("./Components/Pages/404Page"));
@@ -23,8 +24,41 @@ const Div = lazy(() => import("./Components/Pages/Div"));
 const Admin = lazy(() => import("./Admin/Admin"));
 const AdminLogin = lazy(() => import("./Admin/Login"));
 
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        backgroundColor: 'white',
+        zIndex: '999 !important'
+    },
+};
+
 function App() {
 
+    const [modalDisplay, setModalDisplay] = useState(false)
+
+    useEffect(() => {
+
+        if (localStorage.getItem('modalShown') !== 'true') {
+
+            setModalDisplay(true)
+
+        }
+
+    }, [modalDisplay])
+
+    // ? Function to handle the modal close functionality
+    const handleModalClose = () => {
+
+        localStorage.setItem('modalShown', 'true')
+
+        setModalDisplay(false)
+
+    }
 
     // Retrieve the JSON string from localStorage
     const storedTokenString = localStorage.getItem('token');
@@ -51,6 +85,31 @@ function App() {
             <Suspense fallback={<Loading />}>
                 <BrowserRouter>
                     <div className="font-gilroy font-medium text-gray text-lg leading-[27px]">
+
+                        <Modal
+                            isOpen={modalDisplay}
+                            onRequestClose={handleModalClose}
+                            style={customStyles}
+                            contentLabel="Example Modal"
+                            
+                        >
+                            
+                            <img 
+                                src='/assets/reflect_open_house_banner.jpg'
+                                className='announdement-img'
+                            />
+
+                            <div className='modal-btn-section'>
+                                <button
+                                    className='modal-btn btn-primary'
+                                    onClick={handleModalClose}
+                                >
+                                    Close
+                                </button>
+                            </div>
+
+                        </Modal>
+
                         <FloatingWhatsApp
                             phoneNumber="+91 99526 31929"
                             accountName="Reflect Skin & Hair care"

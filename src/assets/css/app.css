@@ -6464,3 +6464,36 @@ ul ul>li.menu-item-has-children:hover>a:after {
 .styles-module_accountName__20AXD {
     color: green !important;
 }
+
+.ReactModalPortal {
+    z-index: 1000;
+    position: absolute;
+}
+
+.modal-btn-section {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+}   
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .announdement-img {
+        width: 85vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .announdement-img {
+        height: 80vh;
+        z-index: 1000;
+    }
+}
