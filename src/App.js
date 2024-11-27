@@ -4,6 +4,7 @@ import { GlobalStateProvider } from "./Components/State/GlobalState";
 import Loading from "./Components/Loading";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Modal from "react-modal";
+import "react-datepicker/dist/react-datepicker.css";
 
 const HomeOne = lazy(() => import("./Components/Home/HomeOne"));
 const ErrorPage = lazy(() => import("./Components/Pages/404Page"));

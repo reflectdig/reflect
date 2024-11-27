@@ -13,6 +13,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../config/Firebase';
 import { useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
+import DatePicker from 'react-datepicker';
 
 const ContactForm = () => {
 
@@ -26,6 +27,11 @@ const ContactForm = () => {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [timeSlot, setTimeSlot] = useState('10am - 4pm');
+    const [startDate, setStartDate] = useState(new Date());
+
+    useEffect(() => {
+        console.log({ startDate })
+    }, [startDate])
 
     const { open, dispatch } = useGlobalState();
     const navigate = useNavigate();
@@ -43,6 +49,7 @@ const ContactForm = () => {
         setName('');
         setPhoneNumber('');
         setTimeSlot('')
+        setStartDate(new Date());
 
         closePopup(dispatch);
 
@@ -58,6 +65,7 @@ const ContactForm = () => {
             timeSlot,
             status: "NEW",
             timestamp: serverTimestamp(),
+            date: startDate.toLocaleDateString('en-GB')
         };
 
 
@@ -144,15 +152,30 @@ const ContactForm = () => {
                             Phone Number *
                         </label>
                         <input
-                            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="number"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="number"
                             type="number"
-                            placeholder="Phone Number"
-                            style={{
-                                MozAppearance: "textfield",
-
-                            }}
+                            placeholder="Phone number"
                             required
                             onChange={(event) => setPhoneNumber(event.target.value)}
+                        />
+                    </div>
+
+                    <label class="block text-gray-700 text-sm font-bold mt-6 mb-2"
+                        style={{
+                            textAlign: "left"
+                        }}
+                    >
+                        Select Date *
+                    </label>
+
+                    <div class="flex items-center">
+                        <DatePicker
+                            selected={startDate}
+                            onChange={(date) => setStartDate(date)}
+                            minDate={new Date()}
+                            required={true}
+                            sty
                         />
                     </div>
 

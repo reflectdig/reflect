@@ -784,7 +784,8 @@ export default function Admin() {
                         <div className="book-card" key={data.id}>
                             <div><strong>Name:</strong> {data?.name}</div>
                             <div> <strong>Phone Number:</strong> {data.phoneNumber} </div>
-                            <div><strong>Time Slot:</strong> {data.timeSlot}</div>
+                            <div> <strong>Date:</strong> {data?.date} </div>
+                            <div> <strong>Time Slot:</strong> {data.timeSlot}</div>
                             <div> <strong>Submission time:</strong> {data.timestamp && data.timestamp.toDate().toString()}</div>
                             {data.status === "NEW" && <div><button style={{ backgroundColor: "orange", padding: "5px 5px 7px 5px ", color: "white", marginTop: "10px", borderRadius: "7px" }} onClick={() => handlerUpdateStatus(data.id)}>Close Appointment</button></div>}
                         </div>
