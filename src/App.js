@@ -3,7 +3,6 @@ import { useState, lazy, Suspense, useEffect } from 'react';
 import { GlobalStateProvider } from "./Components/State/GlobalState";
 import Loading from "./Components/Loading";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import Modal from "react-modal";
 import "react-datepicker/dist/react-datepicker.css";
 
 const HomeOne = lazy(() => import("./Components/Home/HomeOne"));
@@ -86,30 +85,6 @@ function App() {
             <Suspense fallback={<Loading />}>
                 <BrowserRouter>
                     <div className="font-gilroy font-medium text-gray text-lg leading-[27px]">
-
-                        <Modal
-                            isOpen={modalDisplay}
-                            onRequestClose={handleModalClose}
-                            style={customStyles}
-                            contentLabel="Example Modal"
-                            
-                        >
-                            
-                            <img 
-                                src='/assets/reflect_open_house_banner.jpg'
-                                className='announdement-img'
-                            />
-
-                            <div className='modal-btn-section'>
-                                <button
-                                    className='modal-btn btn-primary'
-                                    onClick={handleModalClose}
-                                >
-                                    Close
-                                </button>
-                            </div>
-
-                        </Modal>
 
                         <FloatingWhatsApp
                             phoneNumber="+91 99526 31929"
