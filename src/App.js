@@ -41,25 +41,6 @@ function App() {
 
     const [modalDisplay, setModalDisplay] = useState(false)
 
-    useEffect(() => {
-
-        if (localStorage.getItem('modalShown') !== 'true') {
-
-            setModalDisplay(true)
-
-        }
-
-    }, [modalDisplay])
-
-    // ? Function to handle the modal close functionality
-    const handleModalClose = () => {
-
-        localStorage.setItem('modalShown', 'true')
-
-        setModalDisplay(false)
-
-    }
-
     // Retrieve the JSON string from localStorage
     const storedTokenString = localStorage.getItem('token');
 
