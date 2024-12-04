@@ -128,7 +128,7 @@ const MobileMenu = ({ activeMenu, setActiveMenu }) => {
             </li>
             
             <li>
-              <a aria-label="Go to Contacts" href={"/contact"}>Contacts</a>
+              <a aria-label="Go to Contacts" href={"/contact"}>Contact us</a>
             </li>
           </ul>
         </div>

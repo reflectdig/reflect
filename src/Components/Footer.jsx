@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container border-t border-white border-opacity-[0.1] py-8 text-center text-base">
-        &copy; Copyright {updatedDate} | Reflect Skin | All Rights Reserved | <a href="https://www.thedottech.in/" target="_blank">Crafted By TheDot Tech</a> 
+        &copy; Copyright {updatedDate} | Reflect Skin | All Rights Reserved
       </div>
     </footer>
   );

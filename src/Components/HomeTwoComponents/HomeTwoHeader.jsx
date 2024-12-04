@@ -184,7 +184,7 @@ const HomeTwoHeader = () => {
                     </li>
                     <li>
                       <Link to={"/react-templates/edumim/contacts"}>
-                        Contacts
+                        Contact us
                       </Link>
                     </li>
                   </ul>
